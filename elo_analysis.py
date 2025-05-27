@@ -5,6 +5,8 @@ from collections import defaultdict
 import matplotlib.cm as cm
 import plotly.graph_objs as go
 import plotly.express as px
+import plotly.io as pio
+pio.renderers.default = "browser"
 
 # Data load
 url = 'https://raw.githubusercontent.com/dominik-sv/NBA_teams_elo/main/Data/match_data.csv'
@@ -14,8 +16,8 @@ df['date'] = pd.to_datetime(df['date'])
 df = df.sort_values('date').reset_index(drop=True)
 
 # Constants
-INITIAL_ELO = 1500
-K = 20
+INITIAL_ELO = 1000
+K = 40
 
 # Elaborate elo calculation
 elo_basic = defaultdict(lambda: INITIAL_ELO)
@@ -31,7 +33,7 @@ for season in sorted(df['season'].unique()):
         home, away = row['home_name'], row['visitor_name']
         home_pts, away_pts = row['home_pts'], row['visitor_pts']
         home_win = row['home_win']
-        margin = abs(home_pts - away_pts)
+        margin = row['margin_of_victory']
 
         # Original elo
         elo_home_b, elo_away_b = elo_basic[home], elo_basic[away]
@@ -185,6 +187,24 @@ fig2 = px.scatter(
     title=f"elo vs win percentage – {recent_season} regular season",
     labels={'elo': 'final elo rating', 'win_pct': 'win percentage'}
 )
+# Fix y range
+fig2.update_yaxes(range=[0, 1])
+
+# Centralize x range
+x_vals = team_data['elo']
+x_min = x_vals.min()
+x_max = x_vals.max()
+x_margin = max(INITIAL_ELO - x_min - 100, x_max - INITIAL_ELO + 100)
+
+# Add vline
+fig2.add_vline(x=INITIAL_ELO, line_width=2, line_dash='dash', line_color='gray')
+
+coeffs = np.polyfit(team_data['elo'], team_data['win_pct'], deg=1)
+x_line = np.linspace(x_vals.min(), x_vals.max(), 100)
+y_line = coeffs[0] * x_line + coeffs[1]
+fig2.add_trace(go.Scatter(x=x_line, y=y_line, mode='lines', name='Linear fit', line=dict(dash='dot')))
+
+fig2.update_xaxes(range=[INITIAL_ELO - x_margin, INITIAL_ELO + x_margin])
 fig2.update_traces(textposition='top center')
 fig2.update_layout(template='plotly_white', showlegend=False)
 fig2.show()
