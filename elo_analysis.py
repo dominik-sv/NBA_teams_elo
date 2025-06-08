@@ -19,34 +19,26 @@ df = df.sort_values("date").reset_index(drop=True)
 # Constants
 INITIAL_ELO = 1000
 K = 40
-HOME_ADVANTAGE_WEIGHT = 0.15
-SEASON = 2024
-MODEL = "home_adv"  # Options: "basic", "margin", "home_adv"
+SEASON = 2023
+MODEL = "increasing_K"  # Options: "basic", "margin", "home_adv", "increasing_K", "decreasing_K"
+K_CHANGE = 15
 
 
 # Functions
 def adjust_expected_outcome_home_advantage(expected_outcome, home_advantage, weight):
     return (1 - weight) * expected_outcome + weight * home_advantage
 
-def calculate_expected_outcome(elo_away, elo_home):
+def calculate_expected_outcome(elo_away, elo_home, home_advantage = False):
+    if home_advantage:
+        elo_home += home_advantage
     return 1 / (1 + 10 ** ((elo_away - elo_home) / 400))
 
-def calculate_elo_update(K, outcome_home, exp_home, mov_mult = False, home_advantage = False):
+def calculate_elo_update(K, outcome_home, exp_home, mov_mult = False):
     outcome = outcome_home - exp_home
-    if home_advantage:
-        adj_outcome = adjust_expected_outcome_home_advantage(outcome, home_advantage, HOME_ADVANTAGE_WEIGHT)
-        return K * adj_outcome * mov_mult
     if mov_mult:
         return K * outcome * mov_mult
     else:
         return K * outcome
-
-def calculate_home_team_advantage(season_games):
-    total_matches = season_games.shape[0]
-    home_wins = 0
-    for _, row in season_games.iterrows():
-        home_wins += row["home_win"]
-    return home_wins / total_matches
 
 def add_elo_to_history(base_match_data, elo_after_home, elo_after_away):
     match_data = base_match_data.copy()
@@ -56,19 +48,26 @@ def add_elo_to_history(base_match_data, elo_after_home, elo_after_away):
     })
     return match_data
 
+def calculate_season_progress(starting_date, ending_date, current_date):
+    return (current_date - starting_date) / (ending_date - starting_date)
+
 
 
 # Elaborate elo calculation
 elo_carried = defaultdict(lambda: INITIAL_ELO)
 
-history_basic, history_margin, history_home_adv = [], [], []
+history_basic, history_margin, history_home_adv, history_updK_end, history_updK_start = [], [], [], [], []
 
 for season in sorted(df["season"].unique()):
     elo_basic = defaultdict(lambda: INITIAL_ELO)
     elo_margin = defaultdict(lambda: INITIAL_ELO)
     elo_home_adv = defaultdict(lambda: INITIAL_ELO)
+    elo_updK_end = defaultdict(lambda: INITIAL_ELO)
+    elo_updK_start = defaultdict(lambda: INITIAL_ELO)
+    
     season_games = df[df["season"] == season]
-    home_team_advantage = calculate_home_team_advantage(season_games)
+    home_team_advantage = season_games["home_win"].mean()
+    home_team_elo_shift = np.log(home_team_advantage / (1 - home_team_advantage)) / np.log(10) * 400
 
     # Initialize elo for teams in the season
     teams_in_season = pd.unique(season_games[["home_name", "visitor_name"]].values.ravel())
@@ -84,9 +83,15 @@ for season in sorted(df["season"].unique()):
             "home_win": None,
         }
 
-    history_basic.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-    history_margin.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-    history_home_adv.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+        history_basic.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+        history_margin.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+        history_home_adv.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+        history_updK_end.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+        history_updK_start.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
+
+    # Dates
+    starting_date = season_games["date"].min()
+    ending_date = season_games["date"].max()
 
     # Iterate through games in the season
     for _, row in season_games.iterrows():
@@ -99,11 +104,16 @@ for season in sorted(df["season"].unique()):
         elo_home_b, elo_away_b = elo_basic[home], elo_basic[away]
         elo_home_m, elo_away_m = elo_margin[home], elo_margin[away]
         elo_home_h, elo_away_h = elo_home_adv[home], elo_home_adv[away]
+        elo_home_Ke, elo_away_Ke = elo_updK_end[home], elo_updK_end[away]
+        elo_home_Ks, elo_away_Ks = elo_updK_start[home], elo_updK_start[away]
 
         # Expected outcomes
         exp_home_b = calculate_expected_outcome(elo_away_b, elo_home_b)
         exp_home_m = calculate_expected_outcome(elo_away_m, elo_home_m)
-        exp_home_h = calculate_expected_outcome(elo_home_h, elo_home_h)
+        exp_home_h = calculate_expected_outcome(elo_away_h, elo_home_h, home_advantage=home_team_elo_shift)
+        exp_home_Ke = calculate_expected_outcome(elo_away_Ke, elo_home_Ke, home_advantage=home_team_elo_shift)
+        exp_home_Ks = calculate_expected_outcome(elo_away_Ks, elo_home_Ks, home_advantage=home_team_elo_shift)
+
         outcome_home = 1 if home_win else 0
 
         # Regular elo update
@@ -113,15 +123,28 @@ for season in sorted(df["season"].unique()):
 
         # Margin of victory (MOV) elo update
         elo_diff_m = elo_home_m - elo_away_m
-        mov_mult = np.log(margin + 1) * (2.2 / (0.001 * abs(elo_diff_m) + 2.2))
-        delta_m = calculate_elo_update(K, outcome_home, exp_home_b, mov_mult=mov_mult)
+        mov_mult = np.log(max(margin, 1) + 1) * (2.2 / (0.001 * abs(elo_diff_m) + 2.2))
+        delta_m = calculate_elo_update(K, outcome_home, exp_home_m, mov_mult=mov_mult)
         elo_margin[home] += delta_m
         elo_margin[away] -= delta_m
 
         # Home team advantage elo update
-        delta_h = calculate_elo_update(K, outcome_home, exp_home_b, mov_mult=mov_mult, home_advantage=home_team_advantage)
+        delta_h = calculate_elo_update(K, outcome_home, exp_home_h, mov_mult=mov_mult)
         elo_home_adv[home] += delta_h
         elo_home_adv[away] -= delta_h
+
+        # Updating K throughout season (larger at end, larger at start)
+        season_progress = calculate_season_progress(starting_date, ending_date, row["date"])
+
+        K_weighted_end = K + K_CHANGE * (2 * season_progress - 1)
+        delta_updK_end = calculate_elo_update(K_weighted_end, outcome_home, exp_home_Ke, mov_mult=mov_mult)
+        elo_updK_end[home] += delta_updK_end
+        elo_updK_end[away] -= delta_updK_end
+
+        K_weighted_start = K - K_CHANGE * (2 * season_progress - 1)
+        delta_updK_start = calculate_elo_update(K_weighted_start, outcome_home, exp_home_Ks, mov_mult=mov_mult)
+        elo_updK_start[home] += delta_updK_start
+        elo_updK_start[away] -= delta_updK_start
 
         # Track
         base_match_data = {
@@ -136,15 +159,21 @@ for season in sorted(df["season"].unique()):
         match_data_basic = add_elo_to_history(base_match_data, elo_basic[home], elo_basic[away])
         match_data_margin = add_elo_to_history(base_match_data, elo_margin[home], elo_margin[away])
         match_data_home_adv = add_elo_to_history(base_match_data, elo_home_adv[home], elo_home_adv[away])
+        match_data_updK_end = add_elo_to_history(base_match_data, elo_updK_end[home], elo_updK_end[away])
+        match_data_updK_start = add_elo_to_history(base_match_data, elo_updK_start[home], elo_updK_start[away])
 
         history_basic.append(match_data_basic)
         history_margin.append(match_data_margin)
         history_home_adv.append(match_data_home_adv)
+        history_updK_end.append(match_data_updK_end)
+        history_updK_start.append(match_data_updK_start)
 
 
 elo_df_basic = pd.DataFrame(history_basic)
 elo_df_margin = pd.DataFrame(history_margin)
 elo_df_home_adv = pd.DataFrame(history_home_adv)
+elo_df_updK_end = pd.DataFrame(history_updK_end)
+elo_df_updK_start = pd.DataFrame(history_updK_start)
 
 # # MOV multiplier curve
 # margin_range = np.arange(1, 60)
@@ -207,6 +236,10 @@ elif MODEL == "margin":
     elo_df = elo_df_margin
 elif MODEL == "home_adv":
     elo_df = elo_df_home_adv
+elif MODEL == "increasing_K":
+    elo_df = elo_df_updK_end
+elif MODEL == "decreasing_K":
+    elo_df = elo_df_updK_start
 
 regular_season = elo_df[
     (elo_df["season"] == SEASON) & (elo_df["postseason"] == False)

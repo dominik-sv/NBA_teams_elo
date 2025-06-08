@@ -4,7 +4,6 @@
 
 # To-do:
     Add models:
-        changing K influence throughout season (both versions)
         retained elo from previous season (regression towards origin)
     add summary statistics for season
     add prediction power of:
