@@ -16,4 +16,8 @@ __pycache__/
 *.py[cod]
 
 # Partial match data
-Data/partial_match_data/
+data/partial_match_data/
+
+# Elo data
+data/elo_history/
+data/elo_season_end/
