@@ -3,71 +3,133 @@ import numpy as np
 from collections import defaultdict
 import os
 import json
+from tqdm import tqdm
+from dataclasses import dataclass, field
+from typing import Callable, Dict
 
 # Data load
+print("Importing data...")
 url = "https://raw.githubusercontent.com/dominik-sv/NBA_teams_elo/main/Data/match_data.csv"
 df = pd.read_csv(url)
 
 df["date"] = pd.to_datetime(df["date"])
 df = df.sort_values("date").reset_index(drop=True)
 
-
 # Constants
 INITIAL_ELO = 1000
 K = 40
 K_CHANGE = 15
 
+@dataclass
+class EloVariant:
+    name: str
+    k_func: Callable[[float], float]
+    expect_func: Callable[[float, float, float], float]
+    use_mov_mult: bool
+    use_home_shift: bool
+    ratings: Dict[str, float] = field(default_factory=lambda: defaultdict(lambda: INITIAL_ELO))
+
+    def expected(self, elo_h, elo_a, shift):
+        return self.expect_func(elo_h, elo_a, shift if self.use_home_shift else 0)
+    
+    def k(self, progress):
+        return self.k_func(progress)
+    
+    def apply_game(self, home: str, away: str, outcome_home: int, progress: float, mov_mult: float, shift: float):
+        elo_h, elo_a = self.ratings[home], self.ratings[away]
+        p_home = self.expected(elo_h, elo_a, shift)
+        outcome_diff = outcome_home - p_home
+        mult = mov_mult if self.use_mov_mult else 1
+        delta = self.k(progress) * outcome_diff * mult
+
+        self.ratings[home] += delta
+        self.ratings[away] -= delta
+        return self.ratings[home], self.ratings[away]
+
+VARIANTS = [
+    EloVariant(
+        name="basic",
+        k_func=lambda prog: K,
+        expect_func=lambda eh, ea, _: 1 / (1 + 10 ** ((ea - eh) / 400)),
+        use_mov_mult=False,
+        use_home_shift=False,
+    ),
+    EloVariant(
+        name="margin",
+        k_func=lambda prog: K,
+        expect_func=lambda eh, ea, _: 1 / (1 + 10 ** ((ea - eh) / 400)),
+        use_mov_mult=True,
+        use_home_shift=False,
+    ),
+    EloVariant(
+        name="home_adv",
+        k_func=lambda prog: K,
+        expect_func=lambda eh, ea, shift: 1 / (1 + 10 ** (((ea) - (eh + shift)) / 400)),
+        use_mov_mult=True,
+        use_home_shift=True,
+    ),
+    EloVariant(
+        name="updK_end",
+        k_func=lambda prog: K + K_CHANGE * (2 * prog - 1),
+        expect_func=lambda eh, ea, shift: 1 / (1 + 10 ** (((ea) - (eh + shift)) / 400)),
+        use_mov_mult=True,
+        use_home_shift=True,
+    ),
+    EloVariant(
+        name="updK_start",
+        k_func=lambda prog: K - K_CHANGE * (2 * prog - 1),
+        expect_func=lambda eh, ea, shift: 1 / (1 + 10 ** (((ea) - (eh + shift)) / 400)),
+        use_mov_mult=True,
+        use_home_shift=True,
+    ),
+]
 
 # Functions
-def adjust_expected_outcome_home_advantage(expected_outcome, home_advantage, weight):
-    return (1 - weight) * expected_outcome + weight * home_advantage
-
-def calculate_expected_outcome(elo_away, elo_home, home_advantage = False):
-    if home_advantage:
-        elo_home += home_advantage
-    return 1 / (1 + 10 ** ((elo_away - elo_home) / 400))
-
-def calculate_elo_update(K, outcome_home, exp_home, mov_mult = False):
-    outcome = outcome_home - exp_home
-    if mov_mult:
-        return K * outcome * mov_mult
-    else:
-        return K * outcome
-
 def add_elo_to_history(base_match_data, elo_after_home, elo_after_away):
     match_data = base_match_data.copy()
-    match_data.update({
-        "home_elo_after": elo_after_home,
-        "away_elo_after": elo_after_away,
-    })
+    match_data.update(
+        {
+            "home_elo_after": elo_after_home,
+            "away_elo_after": elo_after_away,
+        }
+    )
     return match_data
 
-def calculate_season_progress(starting_date, ending_date, current_date):
-    return (current_date - starting_date) / (ending_date - starting_date)
+# Initialize dictionaries
+history = {v.name: [] for v in VARIANTS}
+team_stats_all_seasons = defaultdict(dict)
 
+# Process seasons
+for season in tqdm(sorted(df["season"].unique()), desc="Processing seasons"):
+    season_games = df[(df["season"] == season) & (df["postseason"] == False)]
 
-# Elaborate elo calculation
-elo_carried = defaultdict(lambda: INITIAL_ELO)
+    # Initialize elo rating dictionary
+    for v in VARIANTS:
+        v.ratings = defaultdict(lambda: INITIAL_ELO)
 
-history_basic, history_margin, history_home_adv, history_updK_end, history_updK_start = [], [], [], [], []
-
-for season in sorted(df["season"].unique()):
-    elo_basic = defaultdict(lambda: INITIAL_ELO)
-    elo_margin = defaultdict(lambda: INITIAL_ELO)
-    elo_home_adv = defaultdict(lambda: INITIAL_ELO)
-    elo_updK_end = defaultdict(lambda: INITIAL_ELO)
-    elo_updK_start = defaultdict(lambda: INITIAL_ELO)
-    
-    season_games = df[df["season"] == season]
+    # Calculate home court advantage
     home_team_advantage = season_games["home_win"].mean()
-    home_team_elo_shift = np.log(home_team_advantage / (1 - home_team_advantage)) / np.log(10) * 400
+    home_team_elo_shift = (
+        np.log(home_team_advantage / (1 - home_team_advantage)) / np.log(10) * 400
+    )
 
-    # Initialize elo for teams in the season
-    teams_in_season = pd.unique(season_games[["home_name", "visitor_name"]].values.ravel())
+    # Initialize statistics dictionary
+    team_stats = defaultdict(lambda: {
+        **{f"elo_{v.name}": None for v in VARIANTS},
+        "wins": 0,
+        "games_played": 0,
+        "net_rating": 0,
+    })
+
+    # Get teams that played in season
+    teams_in_season = pd.unique(
+        season_games[["home_name", "visitor_name"]].values.ravel()
+    )
+
+    # Begin rating history with dummy row
     first_game_date = season_games["date"].min() - pd.Timedelta(days=1)
-
     for team in teams_in_season:
-        base_match_data = {
+        dummy_row = {
             "date": first_game_date,
             "season": season,
             "postseason": False,
@@ -75,120 +137,107 @@ for season in sorted(df["season"].unique()):
             "away_team": team,
             "home_win": None,
         }
+        for v in VARIANTS:
+            history[v.name].append(
+                add_elo_to_history(dummy_row, INITIAL_ELO, INITIAL_ELO)
+            )
 
-        history_basic.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-        history_margin.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-        history_home_adv.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-        history_updK_end.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-        history_updK_start.append(add_elo_to_history(base_match_data, INITIAL_ELO, INITIAL_ELO))
-
-    # Dates
+    # Get dates
     starting_date = season_games["date"].min()
     ending_date = season_games["date"].max()
 
     # Iterate through games in the season
     for _, row in season_games.iterrows():
+
+        # Get match data
         home, away = row["home_name"], row["visitor_name"]
         home_pts, away_pts = row["home_pts"], row["visitor_pts"]
         home_win = row["home_win"]
         margin = row["margin_of_victory"]
 
-        # Original elo
-        elo_home_b, elo_away_b = elo_basic[home], elo_basic[away]
-        elo_home_m, elo_away_m = elo_margin[home], elo_margin[away]
-        elo_home_h, elo_away_h = elo_home_adv[home], elo_home_adv[away]
-        elo_home_Ke, elo_away_Ke = elo_updK_end[home], elo_updK_end[away]
-        elo_home_Ks, elo_away_Ks = elo_updK_start[home], elo_updK_start[away]
-
-        # Expected outcomes
-        exp_home_b = calculate_expected_outcome(elo_away_b, elo_home_b)
-        exp_home_m = calculate_expected_outcome(elo_away_m, elo_home_m)
-        exp_home_h = calculate_expected_outcome(elo_away_h, elo_home_h, home_advantage=home_team_elo_shift)
-        exp_home_Ke = calculate_expected_outcome(elo_away_Ke, elo_home_Ke, home_advantage=home_team_elo_shift)
-        exp_home_Ks = calculate_expected_outcome(elo_away_Ks, elo_home_Ks, home_advantage=home_team_elo_shift)
-
+        # Calculate needed variables
+        season_progress = (row["date"] - starting_date) / (ending_date - starting_date)
+        elo_diff = VARIANTS[0].ratings[home] - VARIANTS[0].ratings[away]
+        mov_mult = np.log(max(margin, 1) + 1) * (2.2 / (0.001 * abs(elo_diff) + 2.2))
         outcome_home = 1 if home_win else 0
 
-        # Regular elo update
-        delta_b = calculate_elo_update(K, outcome_home, exp_home_b)
-        elo_basic[home] += delta_b
-        elo_basic[away] -= delta_b
+        # Evaluate and append models
+        for v in VARIANTS:
+            elo_h_after, elo_a_after = v.apply_game(
+                home, away,
+                outcome_home=outcome_home,
+                progress=season_progress,
+                mov_mult=mov_mult,
+                shift=home_team_elo_shift,
+            )
 
-        # Margin of victory (MOV) elo update
-        elo_diff_m = elo_home_m - elo_away_m
-        mov_mult = np.log(max(margin, 1) + 1) * (2.2 / (0.001 * abs(elo_diff_m) + 2.2))
-        delta_m = calculate_elo_update(K, outcome_home, exp_home_m, mov_mult=mov_mult)
-        elo_margin[home] += delta_m
-        elo_margin[away] -= delta_m
+            history[v.name].append(
+                add_elo_to_history(
+                    {
+                        "date": row["date"],
+                        "season": season,
+                        "postseason": row["postseason"],
+                        "home_team": home,
+                        "away_team": away,
+                        "home_win": home_win,
+                    },
+                    elo_h_after,
+                    elo_a_after,
+                )
+            )
 
-        # Home team advantage elo update
-        delta_h = calculate_elo_update(K, outcome_home, exp_home_h, mov_mult=mov_mult)
-        elo_home_adv[home] += delta_h
-        elo_home_adv[away] -= delta_h
+        # Track statistics
+        for v in VARIANTS:
+            team_stats[home][f"elo_{v.name}"] = v.ratings[home]
+            team_stats[away][f"elo_{v.name}"] = v.ratings[away]
 
-        # Updating K throughout season (larger at end, larger at start)
-        season_progress = calculate_season_progress(starting_date, ending_date, row["date"])
+        team_stats[home]["wins"] += outcome_home
+        team_stats[away]["wins"] += 1 - outcome_home
+        team_stats[home]["games_played"] += 1
+        team_stats[away]["games_played"] += 1
 
-        K_weighted_end = K + K_CHANGE * (2 * season_progress - 1)
-        delta_updK_end = calculate_elo_update(K_weighted_end, outcome_home, exp_home_Ke, mov_mult=mov_mult)
-        elo_updK_end[home] += delta_updK_end
-        elo_updK_end[away] -= delta_updK_end
+        if outcome_home:
+            team_stats[home]["net_rating"] += margin
+            team_stats[away]["net_rating"] -= margin
+        else:
+            team_stats[home]["net_rating"] -= margin
+            team_stats[away]["net_rating"] += margin
 
-        K_weighted_start = K - K_CHANGE * (2 * season_progress - 1)
-        delta_updK_start = calculate_elo_update(K_weighted_start, outcome_home, exp_home_Ks, mov_mult=mov_mult)
-        elo_updK_start[home] += delta_updK_start
-        elo_updK_start[away] -= delta_updK_start
+    team_stats_all_seasons[int(season)] = team_stats
 
-        # Track
-        base_match_data = {
-            "date": row["date"],
-            "season": season,
-            "postseason": row["postseason"],
-            "home_team": home,
-            "away_team": away,
-            "home_win": home_win,
-        }
-
-        match_data_basic = add_elo_to_history(base_match_data, elo_basic[home], elo_basic[away])
-        match_data_margin = add_elo_to_history(base_match_data, elo_margin[home], elo_margin[away])
-        match_data_home_adv = add_elo_to_history(base_match_data, elo_home_adv[home], elo_home_adv[away])
-        match_data_updK_end = add_elo_to_history(base_match_data, elo_updK_end[home], elo_updK_end[away])
-        match_data_updK_start = add_elo_to_history(base_match_data, elo_updK_start[home], elo_updK_start[away])
-
-        history_basic.append(match_data_basic)
-        history_margin.append(match_data_margin)
-        history_home_adv.append(match_data_home_adv)
-        history_updK_end.append(match_data_updK_end)
-        history_updK_start.append(match_data_updK_start)
-
-
-# Prepare for export
-elo_df_basic = pd.DataFrame(history_basic)
-elo_df_margin = pd.DataFrame(history_margin)
-elo_df_home_adv = pd.DataFrame(history_home_adv)
-elo_df_updK_end = pd.DataFrame(history_updK_end)
-elo_df_updK_start = pd.DataFrame(history_updK_start)
+# Prepare constants for export
 elo_constants = {
     "INITIAL_ELO": INITIAL_ELO,
     "K": K,
     "K_CHANGE": K_CHANGE,
 }
 
+# Export CSV files
+print("Exporting data...")
 
-# Export to CSV
 data_directory = "data"
 elo_directory = "elo_history"
 comb_directory = os.path.join(data_directory, elo_directory)
 os.makedirs(comb_directory, exist_ok=True)
 
-elo_df_basic.to_csv(os.path.join(comb_directory, "elo_df_basic.csv"), index=False)
-elo_df_margin.to_csv(os.path.join(comb_directory, "elo_df_margin.csv"), index=False)
-elo_df_home_adv.to_csv(os.path.join(comb_directory, "elo_df_home_adv.csv"), index=False)
-elo_df_updK_end.to_csv(os.path.join(comb_directory, "elo_df_updK_end.csv"), index=False)
-elo_df_updK_start.to_csv(os.path.join(comb_directory, "elo_df_updK_start.csv"), index=False)
+for v in VARIANTS:
+    pd.DataFrame(history[v.name]).to_csv(
+        os.path.join(comb_directory, f"elo_df_{v.name}.csv"),
+        index=False,
+    )
 
+# Export json files
 with open(os.path.join(comb_directory, "elo_constants.json"), "w") as f:
     json.dump(elo_constants, f)
+
+
+team_stats_directory = "team_stats"
+comb_directory2 = os.path.join(data_directory, team_stats_directory)
+os.makedirs(comb_directory2, exist_ok=True)
+
+with open(os.path.join(comb_directory2, "team_stats.json"), "w") as f:
+    json.dump(team_stats_all_seasons, f)
+    # json.dump({season: dict(stats) for season, stats in team_stats_all_seasons.items()}, f)
 
 print("Elo calculated and data exported successfully.")
 
@@ -248,5 +297,3 @@ print("Elo calculated and data exported successfully.")
 
 # Model evaluation
 ## For all seasons
-
-

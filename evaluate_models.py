@@ -14,5 +14,3 @@ elo_df_margin = pd.read_csv(os.path.join(comb_directory, f"elo_df_margin.csv"))
 elo_df_home_adv = pd.read_csv(os.path.join(comb_directory, f"elo_df_home_adv.csv"))
 elo_df_updK_end = pd.read_csv(os.path.join(comb_directory, f"elo_df_updK_end.csv"))
 elo_df_updK_start = pd.read_csv(os.path.join(comb_directory, f"elo_df_updK_start.csv"))
-
-# Update model
