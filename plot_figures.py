@@ -22,8 +22,8 @@ with open(os.path.join(comb_directory, "elo_constants.json"), "r") as f:
 INITIAL_ELO = elo_constants["INITIAL_ELO"]
 K = elo_constants["K"]
 K_CHANGE = elo_constants["K_CHANGE"]
-SEASON = 2020
-MODEL = "margin"  # Options: "basic", "margin", "home_adv", "updK_end", "updK_start"
+SEASON = 2025
+MODEL = "transfer_elo"  # Options: "basic", "margin", "home_adv", "updK_end", "updK_start", "transfer_elo"
 
 # Extract data
 elo_df = pd.read_csv(os.path.join(data_directory, elo_directory, f"elo_df_{MODEL}.csv"))

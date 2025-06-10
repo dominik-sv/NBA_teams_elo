@@ -1,0 +1,962 @@
+league,season,team1,team2,winner,game_score
+ABA,1968,Anaheim Amigos,Oakland Oaks,Anaheim Amigos,1:0
+ABA,1968,Dallas Chaparrals,Houston Mavericks,Dallas Chaparrals,3:0
+ABA,1968,Dallas Chaparrals,New Orleans Buccaneers,New Orleans Buccaneers,1:4
+ABA,1968,Denver Rockets,New Orleans Buccaneers,New Orleans Buccaneers,2:3
+ABA,1968,Indiana Pacers,Pittsburgh Pipers,Pittsburgh Pipers,0:3
+ABA,1968,Kentucky Colonels,Minnesota Muskies,Minnesota Muskies,2:3
+ABA,1968,Minnesota Muskies,Pittsburgh Pipers,Pittsburgh Pipers,1:4
+ABA,1968,New Orleans Buccaneers,Pittsburgh Pipers,Pittsburgh Pipers,3:4
+ABA,1969,Dallas Chaparrals,New Orleans Buccaneers,New Orleans Buccaneers,3:4
+ABA,1969,Denver Rockets,Oakland Oaks,Oakland Oaks,3:4
+ABA,1969,Indiana Pacers,Kentucky Colonels,Indiana Pacers,4:3
+ABA,1969,Indiana Pacers,Miami Floridians,Indiana Pacers,4:1
+ABA,1969,Indiana Pacers,Oakland Oaks,Oakland Oaks,1:4
+ABA,1969,Miami Floridians,Minnesota Pipers,Miami Floridians,4:3
+ABA,1969,New Orleans Buccaneers,Oakland Oaks,Oakland Oaks,0:4
+ABA,1970,Carolina Cougars,Indiana Pacers,Indiana Pacers,0:4
+ABA,1970,Dallas Chaparrals,Los Angeles Stars,Los Angeles Stars,2:4
+ABA,1970,Denver Rockets,Los Angeles Stars,Los Angeles Stars,1:4
+ABA,1970,Denver Rockets,Washington Capitols,Denver Rockets,4:3
+ABA,1970,Indiana Pacers,Kentucky Colonels,Indiana Pacers,4:1
+ABA,1970,Indiana Pacers,Los Angeles Stars,Indiana Pacers,4:2
+ABA,1970,Kentucky Colonels,New York Nets,Kentucky Colonels,4:3
+ABA,1971,Denver Rockets,Texas Chaparrals,Texas Chaparrals,0:1
+ABA,1971,Indiana Pacers,Memphis Pros,Indiana Pacers,4:0
+ABA,1971,Indiana Pacers,Utah Stars,Utah Stars,3:4
+ABA,1971,Kentucky Colonels,The Floridians,Kentucky Colonels,4:2
+ABA,1971,Kentucky Colonels,Utah Stars,Utah Stars,3:4
+ABA,1971,Kentucky Colonels,Virginia Squires,Kentucky Colonels,4:2
+ABA,1971,New York Nets,Virginia Squires,Virginia Squires,2:4
+ABA,1971,Texas Chaparrals,Utah Stars,Utah Stars,0:4
+ABA,1972,Dallas Chaparrals,Utah Stars,Utah Stars,0:4
+ABA,1972,Denver Rockets,Indiana Pacers,Indiana Pacers,3:4
+ABA,1972,Indiana Pacers,New York Nets,Indiana Pacers,4:2
+ABA,1972,Indiana Pacers,Utah Stars,Indiana Pacers,4:3
+ABA,1972,Kentucky Colonels,New York Nets,New York Nets,2:4
+ABA,1972,New York Nets,Virginia Squires,New York Nets,4:3
+ABA,1972,The Floridians,Virginia Squires,Virginia Squires,0:4
+ABA,1973,Carolina Cougars,Kentucky Colonels,Kentucky Colonels,3:4
+ABA,1973,Carolina Cougars,New York Nets,Carolina Cougars,4:1
+ABA,1973,Denver Rockets,Indiana Pacers,Indiana Pacers,1:4
+ABA,1973,Indiana Pacers,Kentucky Colonels,Indiana Pacers,4:3
+ABA,1973,Indiana Pacers,Utah Stars,Indiana Pacers,4:2
+ABA,1973,Kentucky Colonels,Virginia Squires,Kentucky Colonels,4:1
+ABA,1973,San Diego Conquistadors,Utah Stars,Utah Stars,0:4
+ABA,1974,Carolina Cougars,Kentucky Colonels,Kentucky Colonels,0:4
+ABA,1974,Denver Rockets,San Diego Conquistadors,San Diego Conquistadors,0:1
+ABA,1974,Indiana Pacers,San Antonio Spurs,Indiana Pacers,4:3
+ABA,1974,Indiana Pacers,Utah Stars,Utah Stars,3:4
+ABA,1974,Kentucky Colonels,New York Nets,New York Nets,0:4
+ABA,1974,New York Nets,Utah Stars,New York Nets,4:1
+ABA,1974,New York Nets,Virginia Squires,New York Nets,4:1
+ABA,1974,San Diego Conquistadors,Utah Stars,Utah Stars,2:4
+ABA,1975,Denver Nuggets,Indiana Pacers,Indiana Pacers,3:4
+ABA,1975,Denver Nuggets,Utah Stars,Denver Nuggets,4:2
+ABA,1975,Indiana Pacers,Kentucky Colonels,Kentucky Colonels,1:4
+ABA,1975,Indiana Pacers,San Antonio Spurs,Indiana Pacers,4:2
+ABA,1975,Kentucky Colonels,Memphis Sounds,Kentucky Colonels,4:1
+ABA,1975,Kentucky Colonels,New York Nets,Kentucky Colonels,1:0
+ABA,1975,Kentucky Colonels,Spirits of St. Louis,Kentucky Colonels,4:1
+ABA,1975,New York Nets,Spirits of St. Louis,Spirits of St. Louis,1:4
+ABA,1976,Denver Nuggets,Kentucky Colonels,Denver Nuggets,4:3
+ABA,1976,Denver Nuggets,New York Nets,New York Nets,2:4
+ABA,1976,Indiana Pacers,Kentucky Colonels,Kentucky Colonels,1:2
+ABA,1976,New York Nets,San Antonio Spurs,New York Nets,4:3
+BAA,1947,Chicago Stags,Philadelphia Warriors,Philadelphia Warriors,1:4
+BAA,1947,Chicago Stags,Washington Capitols,Chicago Stags,4:2
+BAA,1947,Cleveland Rebels,New York Knicks,New York Knicks,1:2
+BAA,1947,New York Knicks,Philadelphia Warriors,Philadelphia Warriors,0:2
+BAA,1947,Philadelphia Warriors,St. Louis Bombers,Philadelphia Warriors,2:1
+BAA,1948,Baltimore Bullets,Chicago Stags,Baltimore Bullets,3:0
+BAA,1948,Baltimore Bullets,New York Knicks,Baltimore Bullets,2:1
+BAA,1948,Baltimore Bullets,Philadelphia Warriors,Baltimore Bullets,4:2
+BAA,1948,Boston Celtics,Chicago Stags,Chicago Stags,1:2
+BAA,1948,Chicago Stags,Washington Capitols,Chicago Stags,1:0
+BAA,1948,Philadelphia Warriors,St. Louis Bombers,Philadelphia Warriors,4:3
+BAA,1949,Baltimore Bullets,New York Knicks,New York Knicks,1:2
+BAA,1949,Chicago Stags,Minneapolis Lakers,Minneapolis Lakers,0:2
+BAA,1949,Minneapolis Lakers,Rochester Royals,Minneapolis Lakers,2:0
+BAA,1949,Minneapolis Lakers,Washington Capitols,Minneapolis Lakers,4:2
+BAA,1949,New York Knicks,Washington Capitols,Washington Capitols,1:2
+BAA,1949,Philadelphia Warriors,Washington Capitols,Washington Capitols,0:2
+BAA,1949,Rochester Royals,St. Louis Bombers,Rochester Royals,2:0
+NBA,1950,Anderson Packers,Indianapolis Olympians,Anderson Packers,2:1
+NBA,1950,Anderson Packers,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1950,Anderson Packers,Tri-Cities Blackhawks,Anderson Packers,2:1
+NBA,1950,Chicago Stags,Fort Wayne Pistons,Fort Wayne Pistons,0:1
+NBA,1950,Chicago Stags,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1950,Fort Wayne Pistons,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1950,Fort Wayne Pistons,Rochester Royals,Fort Wayne Pistons,2:0
+NBA,1950,Indianapolis Olympians,Sheboygan Red Skins,Indianapolis Olympians,2:1
+NBA,1950,Minneapolis Lakers,Rochester Royals,Minneapolis Lakers,1:0
+NBA,1950,Minneapolis Lakers,Syracuse Nationals,Minneapolis Lakers,4:2
+NBA,1950,New York Knicks,Syracuse Nationals,Syracuse Nationals,1:2
+NBA,1950,New York Knicks,Washington Capitols,New York Knicks,2:0
+NBA,1950,Philadelphia Warriors,Syracuse Nationals,Syracuse Nationals,0:2
+NBA,1951,Boston Celtics,New York Knicks,New York Knicks,0:2
+NBA,1951,Fort Wayne Pistons,Rochester Royals,Rochester Royals,1:2
+NBA,1951,Indianapolis Olympians,Minneapolis Lakers,Minneapolis Lakers,1:2
+NBA,1951,Minneapolis Lakers,Rochester Royals,Rochester Royals,1:3
+NBA,1951,New York Knicks,Rochester Royals,Rochester Royals,3:4
+NBA,1951,New York Knicks,Syracuse Nationals,New York Knicks,3:2
+NBA,1951,Philadelphia Warriors,Syracuse Nationals,Syracuse Nationals,0:2
+NBA,1952,Boston Celtics,New York Knicks,New York Knicks,1:2
+NBA,1952,Fort Wayne Pistons,Rochester Royals,Rochester Royals,0:2
+NBA,1952,Indianapolis Olympians,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1952,Minneapolis Lakers,New York Knicks,Minneapolis Lakers,4:3
+NBA,1952,Minneapolis Lakers,Rochester Royals,Minneapolis Lakers,3:1
+NBA,1952,New York Knicks,Syracuse Nationals,New York Knicks,3:1
+NBA,1952,Philadelphia Warriors,Syracuse Nationals,Syracuse Nationals,1:2
+NBA,1953,Baltimore Bullets,New York Knicks,New York Knicks,0:2
+NBA,1953,Boston Celtics,New York Knicks,New York Knicks,1:3
+NBA,1953,Boston Celtics,Syracuse Nationals,Boston Celtics,2:1
+NBA,1953,Fort Wayne Pistons,Milwaukee Hawks,Milwaukee Hawks,0:1
+NBA,1953,Fort Wayne Pistons,Minneapolis Lakers,Minneapolis Lakers,2:3
+NBA,1953,Fort Wayne Pistons,Rochester Royals,Fort Wayne Pistons,2:1
+NBA,1953,Indianapolis Olympians,Milwaukee Hawks,Indianapolis Olympians,1:0
+NBA,1953,Indianapolis Olympians,Minneapolis Lakers,Minneapolis Lakers,0:3
+NBA,1953,Minneapolis Lakers,New York Knicks,Minneapolis Lakers,4:1
+NBA,1954,Boston Celtics,Syracuse Nationals,Syracuse Nationals,0:2
+NBA,1954,Minneapolis Lakers,Rochester Royals,Minneapolis Lakers,2:1
+NBA,1954,Minneapolis Lakers,Syracuse Nationals,Minneapolis Lakers,4:3
+NBA,1955,Boston Celtics,New York Knicks,Boston Celtics,2:1
+NBA,1955,Boston Celtics,Syracuse Nationals,Syracuse Nationals,1:3
+NBA,1955,Fort Wayne Pistons,Minneapolis Lakers,Fort Wayne Pistons,3:1
+NBA,1955,Fort Wayne Pistons,Syracuse Nationals,Syracuse Nationals,3:4
+NBA,1955,Minneapolis Lakers,Rochester Royals,Minneapolis Lakers,2:1
+NBA,1956,Boston Celtics,Syracuse Nationals,Syracuse Nationals,1:2
+NBA,1956,Fort Wayne Pistons,Philadelphia Warriors,Philadelphia Warriors,1:4
+NBA,1956,Fort Wayne Pistons,St. Louis Hawks,Fort Wayne Pistons,3:2
+NBA,1956,Minneapolis Lakers,St. Louis Hawks,Minneapolis Lakers,2:2
+NBA,1956,New York Knicks,Syracuse Nationals,Syracuse Nationals,0:1
+NBA,1956,Philadelphia Warriors,Syracuse Nationals,Philadelphia Warriors,3:2
+NBA,1957,Boston Celtics,St. Louis Hawks,Boston Celtics,4:3
+NBA,1957,Boston Celtics,Syracuse Nationals,Boston Celtics,3:0
+NBA,1957,Fort Wayne Pistons,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1957,Fort Wayne Pistons,St. Louis Hawks,St. Louis Hawks,0:1
+NBA,1957,Minneapolis Lakers,St. Louis Hawks,St. Louis Hawks,0:4
+NBA,1957,Philadelphia Warriors,Syracuse Nationals,Syracuse Nationals,0:2
+NBA,1958,Boston Celtics,Philadelphia Warriors,Boston Celtics,4:1
+NBA,1958,Boston Celtics,St. Louis Hawks,St. Louis Hawks,2:4
+NBA,1958,Cincinnati Royals,Detroit Pistons,Detroit Pistons,0:2
+NBA,1958,Detroit Pistons,St. Louis Hawks,St. Louis Hawks,1:4
+NBA,1958,Philadelphia Warriors,Syracuse Nationals,Philadelphia Warriors,2:1
+NBA,1959,Boston Celtics,Minneapolis Lakers,Boston Celtics,4:0
+NBA,1959,Boston Celtics,Syracuse Nationals,Boston Celtics,4:3
+NBA,1959,Detroit Pistons,Minneapolis Lakers,Minneapolis Lakers,1:2
+NBA,1959,Minneapolis Lakers,St. Louis Hawks,Minneapolis Lakers,4:2
+NBA,1959,New York Knicks,Syracuse Nationals,Syracuse Nationals,0:2
+NBA,1960,Boston Celtics,Philadelphia Warriors,Boston Celtics,4:2
+NBA,1960,Boston Celtics,St. Louis Hawks,Boston Celtics,4:3
+NBA,1960,Detroit Pistons,Minneapolis Lakers,Minneapolis Lakers,0:2
+NBA,1960,Minneapolis Lakers,St. Louis Hawks,St. Louis Hawks,3:4
+NBA,1960,Philadelphia Warriors,Syracuse Nationals,Philadelphia Warriors,2:1
+NBA,1961,Boston Celtics,St. Louis Hawks,Boston Celtics,4:1
+NBA,1961,Boston Celtics,Syracuse Nationals,Boston Celtics,4:1
+NBA,1961,Detroit Pistons,Los Angeles Lakers,Los Angeles Lakers,2:3
+NBA,1961,Los Angeles Lakers,St. Louis Hawks,St. Louis Hawks,3:4
+NBA,1961,Philadelphia Warriors,Syracuse Nationals,Syracuse Nationals,0:3
+NBA,1962,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:3
+NBA,1962,Boston Celtics,Philadelphia Warriors,Boston Celtics,4:3
+NBA,1962,Cincinnati Royals,Detroit Pistons,Detroit Pistons,1:3
+NBA,1962,Detroit Pistons,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,1962,Philadelphia Warriors,Syracuse Nationals,Philadelphia Warriors,3:2
+NBA,1963,Boston Celtics,Cincinnati Royals,Boston Celtics,4:3
+NBA,1963,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:2
+NBA,1963,Cincinnati Royals,Syracuse Nationals,Cincinnati Royals,3:2
+NBA,1963,Detroit Pistons,St. Louis Hawks,St. Louis Hawks,1:3
+NBA,1963,Los Angeles Lakers,St. Louis Hawks,Los Angeles Lakers,4:3
+NBA,1964,Boston Celtics,Cincinnati Royals,Boston Celtics,4:1
+NBA,1964,Boston Celtics,San Francisco Warriors,Boston Celtics,4:1
+NBA,1964,Cincinnati Royals,Philadelphia 76ers,Cincinnati Royals,3:2
+NBA,1964,Los Angeles Lakers,St. Louis Hawks,St. Louis Hawks,2:3
+NBA,1964,San Francisco Warriors,St. Louis Hawks,San Francisco Warriors,4:3
+NBA,1965,Baltimore Bullets,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,1965,Baltimore Bullets,St. Louis Hawks,Baltimore Bullets,3:1
+NBA,1965,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:1
+NBA,1965,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:3
+NBA,1965,Cincinnati Royals,Philadelphia 76ers,Philadelphia 76ers,1:3
+NBA,1966,Baltimore Bullets,St. Louis Hawks,St. Louis Hawks,0:3
+NBA,1966,Boston Celtics,Cincinnati Royals,Boston Celtics,3:2
+NBA,1966,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:3
+NBA,1966,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:1
+NBA,1966,Los Angeles Lakers,St. Louis Hawks,Los Angeles Lakers,4:3
+NBA,1967,Boston Celtics,New York Knicks,Boston Celtics,3:1
+NBA,1967,Boston Celtics,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,1967,Chicago Bulls,St. Louis Hawks,St. Louis Hawks,0:3
+NBA,1967,Cincinnati Royals,Philadelphia 76ers,Philadelphia 76ers,1:3
+NBA,1967,Los Angeles Lakers,San Francisco Warriors,San Francisco Warriors,0:3
+NBA,1967,Philadelphia 76ers,San Francisco Warriors,Philadelphia 76ers,4:2
+NBA,1967,San Francisco Warriors,St. Louis Hawks,San Francisco Warriors,4:2
+NBA,1968,Boston Celtics,Detroit Pistons,Boston Celtics,4:2
+NBA,1968,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:2
+NBA,1968,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:3
+NBA,1968,Chicago Bulls,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1968,Los Angeles Lakers,San Francisco Warriors,Los Angeles Lakers,4:0
+NBA,1968,New York Knicks,Philadelphia 76ers,Philadelphia 76ers,2:4
+NBA,1968,San Francisco Warriors,St. Louis Hawks,San Francisco Warriors,4:2
+NBA,1969,Atlanta Hawks,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1969,Atlanta Hawks,San Diego Rockets,Atlanta Hawks,4:2
+NBA,1969,Baltimore Bullets,New York Knicks,New York Knicks,0:4
+NBA,1969,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:3
+NBA,1969,Boston Celtics,New York Knicks,Boston Celtics,4:2
+NBA,1969,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:1
+NBA,1969,Los Angeles Lakers,San Francisco Warriors,Los Angeles Lakers,4:2
+NBA,1970,Atlanta Hawks,Chicago Bulls,Atlanta Hawks,4:1
+NBA,1970,Atlanta Hawks,Los Angeles Lakers,Los Angeles Lakers,0:4
+NBA,1970,Baltimore Bullets,New York Knicks,New York Knicks,3:4
+NBA,1970,Los Angeles Lakers,New York Knicks,New York Knicks,3:4
+NBA,1970,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:3
+NBA,1970,Milwaukee Bucks,New York Knicks,New York Knicks,1:4
+NBA,1970,Milwaukee Bucks,Philadelphia 76ers,Milwaukee Bucks,4:1
+NBA,1971,Atlanta Hawks,New York Knicks,New York Knicks,1:4
+NBA,1971,Baltimore Bullets,Milwaukee Bucks,Milwaukee Bucks,0:4
+NBA,1971,Baltimore Bullets,New York Knicks,Baltimore Bullets,4:3
+NBA,1971,Baltimore Bullets,Philadelphia 76ers,Baltimore Bullets,4:3
+NBA,1971,Chicago Bulls,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,1971,Los Angeles Lakers,Milwaukee Bucks,Milwaukee Bucks,1:4
+NBA,1971,Milwaukee Bucks,San Francisco Warriors,Milwaukee Bucks,4:1
+NBA,1972,Atlanta Hawks,Boston Celtics,Boston Celtics,2:4
+NBA,1972,Baltimore Bullets,New York Knicks,New York Knicks,2:4
+NBA,1972,Boston Celtics,New York Knicks,New York Knicks,1:4
+NBA,1972,Chicago Bulls,Los Angeles Lakers,Los Angeles Lakers,0:4
+NBA,1972,Golden State Warriors,Milwaukee Bucks,Milwaukee Bucks,1:4
+NBA,1972,Los Angeles Lakers,Milwaukee Bucks,Los Angeles Lakers,4:2
+NBA,1972,Los Angeles Lakers,New York Knicks,Los Angeles Lakers,4:1
+NBA,1973,Atlanta Hawks,Boston Celtics,Boston Celtics,2:4
+NBA,1973,Baltimore Bullets,New York Knicks,New York Knicks,1:4
+NBA,1973,Boston Celtics,New York Knicks,New York Knicks,3:4
+NBA,1973,Chicago Bulls,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,1973,Golden State Warriors,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1973,Golden State Warriors,Milwaukee Bucks,Golden State Warriors,4:2
+NBA,1973,Los Angeles Lakers,New York Knicks,New York Knicks,1:4
+NBA,1974,Boston Celtics,Buffalo Braves,Boston Celtics,4:2
+NBA,1974,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:3
+NBA,1974,Boston Celtics,New York Knicks,Boston Celtics,4:1
+NBA,1974,Capital Bullets,New York Knicks,New York Knicks,3:4
+NBA,1974,Chicago Bulls,Detroit Pistons,Chicago Bulls,4:3
+NBA,1974,Chicago Bulls,Milwaukee Bucks,Milwaukee Bucks,0:4
+NBA,1974,Los Angeles Lakers,Milwaukee Bucks,Milwaukee Bucks,1:4
+NBA,1975,Boston Celtics,Houston Rockets,Boston Celtics,4:1
+NBA,1975,Boston Celtics,Washington Bullets,Washington Bullets,2:4
+NBA,1975,Buffalo Braves,Washington Bullets,Washington Bullets,3:4
+NBA,1975,Chicago Bulls,Golden State Warriors,Golden State Warriors,3:4
+NBA,1975,Chicago Bulls,Kansas City-Omaha Kings,Chicago Bulls,4:2
+NBA,1975,Detroit Pistons,Seattle SuperSonics,Seattle SuperSonics,1:2
+NBA,1975,Golden State Warriors,Seattle SuperSonics,Golden State Warriors,4:2
+NBA,1975,Golden State Warriors,Washington Bullets,Golden State Warriors,4:0
+NBA,1975,Houston Rockets,New York Knicks,Houston Rockets,2:1
+NBA,1976,Boston Celtics,Buffalo Braves,Boston Celtics,4:2
+NBA,1976,Boston Celtics,Cleveland Cavaliers,Boston Celtics,4:2
+NBA,1976,Boston Celtics,Phoenix Suns,Boston Celtics,4:2
+NBA,1976,Buffalo Braves,Philadelphia 76ers,Buffalo Braves,2:1
+NBA,1976,Cleveland Cavaliers,Washington Bullets,Cleveland Cavaliers,4:3
+NBA,1976,Detroit Pistons,Golden State Warriors,Golden State Warriors,2:4
+NBA,1976,Detroit Pistons,Milwaukee Bucks,Detroit Pistons,2:1
+NBA,1976,Golden State Warriors,Phoenix Suns,Phoenix Suns,3:4
+NBA,1976,Phoenix Suns,Seattle SuperSonics,Phoenix Suns,4:2
+NBA,1977,Boston Celtics,Philadelphia 76ers,Philadelphia 76ers,3:4
+NBA,1977,Boston Celtics,San Antonio Spurs,Boston Celtics,2:0
+NBA,1977,Chicago Bulls,Portland Trail Blazers,Portland Trail Blazers,1:2
+NBA,1977,Cleveland Cavaliers,Washington Bullets,Washington Bullets,1:2
+NBA,1977,Denver Nuggets,Portland Trail Blazers,Portland Trail Blazers,2:4
+NBA,1977,Detroit Pistons,Golden State Warriors,Golden State Warriors,1:2
+NBA,1977,Golden State Warriors,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,1977,Houston Rockets,Philadelphia 76ers,Philadelphia 76ers,2:4
+NBA,1977,Houston Rockets,Washington Bullets,Houston Rockets,4:2
+NBA,1977,Los Angeles Lakers,Portland Trail Blazers,Portland Trail Blazers,0:4
+NBA,1977,Philadelphia 76ers,Portland Trail Blazers,Portland Trail Blazers,2:4
+NBA,1978,Atlanta Hawks,Washington Bullets,Washington Bullets,0:2
+NBA,1978,Cleveland Cavaliers,New York Knicks,New York Knicks,0:2
+NBA,1978,Denver Nuggets,Milwaukee Bucks,Denver Nuggets,4:3
+NBA,1978,Denver Nuggets,Seattle SuperSonics,Seattle SuperSonics,2:4
+NBA,1978,Los Angeles Lakers,Seattle SuperSonics,Seattle SuperSonics,1:2
+NBA,1978,Milwaukee Bucks,Phoenix Suns,Milwaukee Bucks,2:0
+NBA,1978,New York Knicks,Philadelphia 76ers,Philadelphia 76ers,0:4
+NBA,1978,Philadelphia 76ers,Washington Bullets,Washington Bullets,2:4
+NBA,1978,Portland Trail Blazers,Seattle SuperSonics,Seattle SuperSonics,2:4
+NBA,1978,San Antonio Spurs,Washington Bullets,Washington Bullets,2:4
+NBA,1978,Seattle SuperSonics,Washington Bullets,Washington Bullets,3:4
+NBA,1979,Atlanta Hawks,Houston Rockets,Atlanta Hawks,2:0
+NBA,1979,Atlanta Hawks,Washington Bullets,Washington Bullets,3:4
+NBA,1979,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,1:2
+NBA,1979,Kansas City Kings,Phoenix Suns,Phoenix Suns,1:4
+NBA,1979,Los Angeles Lakers,Seattle SuperSonics,Seattle SuperSonics,1:4
+NBA,1979,New Jersey Nets,Philadelphia 76ers,Philadelphia 76ers,0:2
+NBA,1979,Philadelphia 76ers,San Antonio Spurs,San Antonio Spurs,3:4
+NBA,1979,Phoenix Suns,Portland Trail Blazers,Phoenix Suns,2:1
+NBA,1979,Phoenix Suns,Seattle SuperSonics,Seattle SuperSonics,3:4
+NBA,1979,San Antonio Spurs,Washington Bullets,Washington Bullets,3:4
+NBA,1979,Seattle SuperSonics,Washington Bullets,Seattle SuperSonics,4:1
+NBA,1980,Atlanta Hawks,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,1980,Boston Celtics,Houston Rockets,Boston Celtics,4:0
+NBA,1980,Boston Celtics,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,1980,Houston Rockets,San Antonio Spurs,Houston Rockets,2:1
+NBA,1980,Kansas City Kings,Phoenix Suns,Phoenix Suns,1:2
+NBA,1980,Los Angeles Lakers,Philadelphia 76ers,Los Angeles Lakers,4:2
+NBA,1980,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:1
+NBA,1980,Los Angeles Lakers,Seattle SuperSonics,Los Angeles Lakers,4:1
+NBA,1980,Milwaukee Bucks,Seattle SuperSonics,Seattle SuperSonics,3:4
+NBA,1980,Philadelphia 76ers,Washington Bullets,Philadelphia 76ers,2:0
+NBA,1980,Portland Trail Blazers,Seattle SuperSonics,Seattle SuperSonics,1:2
+NBA,1981,Boston Celtics,Chicago Bulls,Boston Celtics,4:0
+NBA,1981,Boston Celtics,Houston Rockets,Boston Celtics,4:2
+NBA,1981,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:3
+NBA,1981,Chicago Bulls,New York Knicks,Chicago Bulls,2:0
+NBA,1981,Houston Rockets,Kansas City Kings,Houston Rockets,4:1
+NBA,1981,Houston Rockets,Los Angeles Lakers,Houston Rockets,2:1
+NBA,1981,Houston Rockets,San Antonio Spurs,Houston Rockets,4:3
+NBA,1981,Indiana Pacers,Philadelphia 76ers,Philadelphia 76ers,0:2
+NBA,1981,Kansas City Kings,Phoenix Suns,Kansas City Kings,4:3
+NBA,1981,Kansas City Kings,Portland Trail Blazers,Kansas City Kings,2:1
+NBA,1981,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,3:4
+NBA,1982,Atlanta Hawks,Philadelphia 76ers,Philadelphia 76ers,0:2
+NBA,1982,Boston Celtics,Philadelphia 76ers,Philadelphia 76ers,3:4
+NBA,1982,Boston Celtics,Washington Bullets,Boston Celtics,4:1
+NBA,1982,Denver Nuggets,Phoenix Suns,Phoenix Suns,1:2
+NBA,1982,Houston Rockets,Seattle SuperSonics,Seattle SuperSonics,1:2
+NBA,1982,Los Angeles Lakers,Philadelphia 76ers,Los Angeles Lakers,4:2
+NBA,1982,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:0
+NBA,1982,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:0
+NBA,1982,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,2:4
+NBA,1982,New Jersey Nets,Washington Bullets,Washington Bullets,0:2
+NBA,1982,San Antonio Spurs,Seattle SuperSonics,San Antonio Spurs,4:1
+NBA,1983,Atlanta Hawks,Boston Celtics,Boston Celtics,1:2
+NBA,1983,Boston Celtics,Milwaukee Bucks,Milwaukee Bucks,0:4
+NBA,1983,Denver Nuggets,Phoenix Suns,Denver Nuggets,2:1
+NBA,1983,Denver Nuggets,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,1983,Los Angeles Lakers,Philadelphia 76ers,Philadelphia 76ers,0:4
+NBA,1983,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,4:1
+NBA,1983,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:2
+NBA,1983,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,1983,New Jersey Nets,New York Knicks,New York Knicks,0:2
+NBA,1983,New York Knicks,Philadelphia 76ers,Philadelphia 76ers,0:4
+NBA,1983,Portland Trail Blazers,Seattle SuperSonics,Portland Trail Blazers,2:0
+NBA,1984,Atlanta Hawks,Milwaukee Bucks,Milwaukee Bucks,2:3
+NBA,1984,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:3
+NBA,1984,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:1
+NBA,1984,Boston Celtics,New York Knicks,Boston Celtics,4:3
+NBA,1984,Boston Celtics,Washington Bullets,Boston Celtics,3:1
+NBA,1984,Dallas Mavericks,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1984,Dallas Mavericks,Seattle SuperSonics,Dallas Mavericks,3:2
+NBA,1984,Denver Nuggets,Utah Jazz,Utah Jazz,2:3
+NBA,1984,Detroit Pistons,New York Knicks,New York Knicks,2:3
+NBA,1984,Kansas City Kings,Los Angeles Lakers,Los Angeles Lakers,0:3
+NBA,1984,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:2
+NBA,1984,Milwaukee Bucks,New Jersey Nets,Milwaukee Bucks,4:2
+NBA,1984,New Jersey Nets,Philadelphia 76ers,New Jersey Nets,3:2
+NBA,1984,Phoenix Suns,Portland Trail Blazers,Phoenix Suns,3:2
+NBA,1984,Phoenix Suns,Utah Jazz,Phoenix Suns,4:2
+NBA,1985,Boston Celtics,Cleveland Cavaliers,Boston Celtics,3:1
+NBA,1985,Boston Celtics,Detroit Pistons,Boston Celtics,4:2
+NBA,1985,Boston Celtics,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,1985,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:1
+NBA,1985,Chicago Bulls,Milwaukee Bucks,Milwaukee Bucks,1:3
+NBA,1985,Dallas Mavericks,Portland Trail Blazers,Portland Trail Blazers,1:3
+NBA,1985,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1985,Denver Nuggets,San Antonio Spurs,Denver Nuggets,3:2
+NBA,1985,Denver Nuggets,Utah Jazz,Denver Nuggets,4:1
+NBA,1985,Detroit Pistons,New Jersey Nets,Detroit Pistons,3:0
+NBA,1985,Houston Rockets,Utah Jazz,Utah Jazz,2:3
+NBA,1985,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,3:0
+NBA,1985,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,4:1
+NBA,1985,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,0:4
+NBA,1985,Philadelphia 76ers,Washington Bullets,Philadelphia 76ers,3:1
+NBA,1986,Atlanta Hawks,Boston Celtics,Boston Celtics,1:4
+NBA,1986,Atlanta Hawks,Detroit Pistons,Atlanta Hawks,3:1
+NBA,1986,Boston Celtics,Chicago Bulls,Boston Celtics,3:0
+NBA,1986,Boston Celtics,Houston Rockets,Boston Celtics,4:2
+NBA,1986,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:0
+NBA,1986,Dallas Mavericks,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,1986,Dallas Mavericks,Utah Jazz,Dallas Mavericks,3:1
+NBA,1986,Denver Nuggets,Houston Rockets,Houston Rockets,2:4
+NBA,1986,Denver Nuggets,Portland Trail Blazers,Denver Nuggets,3:1
+NBA,1986,Houston Rockets,Los Angeles Lakers,Houston Rockets,4:1
+NBA,1986,Houston Rockets,Sacramento Kings,Houston Rockets,3:0
+NBA,1986,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,3:0
+NBA,1986,Milwaukee Bucks,New Jersey Nets,Milwaukee Bucks,3:0
+NBA,1986,Milwaukee Bucks,Philadelphia 76ers,Milwaukee Bucks,4:3
+NBA,1986,Philadelphia 76ers,Washington Bullets,Philadelphia 76ers,3:2
+NBA,1987,Atlanta Hawks,Detroit Pistons,Detroit Pistons,1:4
+NBA,1987,Atlanta Hawks,Indiana Pacers,Atlanta Hawks,3:1
+NBA,1987,Boston Celtics,Chicago Bulls,Boston Celtics,3:0
+NBA,1987,Boston Celtics,Detroit Pistons,Boston Celtics,4:3
+NBA,1987,Boston Celtics,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,1987,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:3
+NBA,1987,Dallas Mavericks,Seattle SuperSonics,Seattle SuperSonics,1:3
+NBA,1987,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,0:3
+NBA,1987,Detroit Pistons,Washington Bullets,Detroit Pistons,3:0
+NBA,1987,Golden State Warriors,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1987,Golden State Warriors,Utah Jazz,Golden State Warriors,3:2
+NBA,1987,Houston Rockets,Portland Trail Blazers,Houston Rockets,3:1
+NBA,1987,Houston Rockets,Seattle SuperSonics,Seattle SuperSonics,2:4
+NBA,1987,Los Angeles Lakers,Seattle SuperSonics,Los Angeles Lakers,4:0
+NBA,1987,Milwaukee Bucks,Philadelphia 76ers,Milwaukee Bucks,3:2
+NBA,1988,Atlanta Hawks,Boston Celtics,Boston Celtics,3:4
+NBA,1988,Atlanta Hawks,Milwaukee Bucks,Atlanta Hawks,3:2
+NBA,1988,Boston Celtics,Detroit Pistons,Detroit Pistons,2:4
+NBA,1988,Boston Celtics,New York Knicks,Boston Celtics,3:1
+NBA,1988,Chicago Bulls,Cleveland Cavaliers,Chicago Bulls,3:2
+NBA,1988,Chicago Bulls,Detroit Pistons,Detroit Pistons,1:4
+NBA,1988,Dallas Mavericks,Denver Nuggets,Dallas Mavericks,4:2
+NBA,1988,Dallas Mavericks,Houston Rockets,Dallas Mavericks,3:1
+NBA,1988,Dallas Mavericks,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,1988,Denver Nuggets,Seattle SuperSonics,Denver Nuggets,3:2
+NBA,1988,Detroit Pistons,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,1988,Detroit Pistons,Washington Bullets,Detroit Pistons,3:2
+NBA,1988,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,3:0
+NBA,1988,Los Angeles Lakers,Utah Jazz,Los Angeles Lakers,4:3
+NBA,1988,Portland Trail Blazers,Utah Jazz,Utah Jazz,1:3
+NBA,1989,Atlanta Hawks,Milwaukee Bucks,Milwaukee Bucks,2:3
+NBA,1989,Boston Celtics,Detroit Pistons,Detroit Pistons,0:3
+NBA,1989,Chicago Bulls,Cleveland Cavaliers,Chicago Bulls,3:2
+NBA,1989,Chicago Bulls,Detroit Pistons,Detroit Pistons,2:4
+NBA,1989,Chicago Bulls,New York Knicks,Chicago Bulls,4:2
+NBA,1989,Denver Nuggets,Phoenix Suns,Phoenix Suns,0:3
+NBA,1989,Detroit Pistons,Los Angeles Lakers,Detroit Pistons,4:0
+NBA,1989,Detroit Pistons,Milwaukee Bucks,Detroit Pistons,4:0
+NBA,1989,Golden State Warriors,Phoenix Suns,Phoenix Suns,1:4
+NBA,1989,Golden State Warriors,Utah Jazz,Golden State Warriors,3:0
+NBA,1989,Houston Rockets,Seattle SuperSonics,Seattle SuperSonics,1:3
+NBA,1989,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:0
+NBA,1989,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,3:0
+NBA,1989,Los Angeles Lakers,Seattle SuperSonics,Los Angeles Lakers,4:0
+NBA,1989,New York Knicks,Philadelphia 76ers,New York Knicks,3:0
+NBA,1990,Boston Celtics,New York Knicks,New York Knicks,2:3
+NBA,1990,Chicago Bulls,Detroit Pistons,Detroit Pistons,3:4
+NBA,1990,Chicago Bulls,Milwaukee Bucks,Chicago Bulls,3:1
+NBA,1990,Chicago Bulls,Philadelphia 76ers,Chicago Bulls,4:1
+NBA,1990,Cleveland Cavaliers,Philadelphia 76ers,Philadelphia 76ers,2:3
+NBA,1990,Dallas Mavericks,Portland Trail Blazers,Portland Trail Blazers,0:3
+NBA,1990,Denver Nuggets,San Antonio Spurs,San Antonio Spurs,0:3
+NBA,1990,Detroit Pistons,Indiana Pacers,Detroit Pistons,3:0
+NBA,1990,Detroit Pistons,New York Knicks,Detroit Pistons,4:1
+NBA,1990,Detroit Pistons,Portland Trail Blazers,Detroit Pistons,4:1
+NBA,1990,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,1:3
+NBA,1990,Los Angeles Lakers,Phoenix Suns,Phoenix Suns,1:4
+NBA,1990,Phoenix Suns,Portland Trail Blazers,Portland Trail Blazers,2:4
+NBA,1990,Phoenix Suns,Utah Jazz,Phoenix Suns,3:2
+NBA,1990,Portland Trail Blazers,San Antonio Spurs,Portland Trail Blazers,4:3
+NBA,1991,Atlanta Hawks,Detroit Pistons,Detroit Pistons,2:3
+NBA,1991,Boston Celtics,Detroit Pistons,Detroit Pistons,2:4
+NBA,1991,Boston Celtics,Indiana Pacers,Boston Celtics,3:2
+NBA,1991,Chicago Bulls,Detroit Pistons,Chicago Bulls,4:0
+NBA,1991,Chicago Bulls,Los Angeles Lakers,Chicago Bulls,4:1
+NBA,1991,Chicago Bulls,New York Knicks,Chicago Bulls,3:0
+NBA,1991,Chicago Bulls,Philadelphia 76ers,Chicago Bulls,4:1
+NBA,1991,Golden State Warriors,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,1991,Golden State Warriors,San Antonio Spurs,Golden State Warriors,3:1
+NBA,1991,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,0:3
+NBA,1991,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,4:2
+NBA,1991,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,0:3
+NBA,1991,Phoenix Suns,Utah Jazz,Utah Jazz,1:3
+NBA,1991,Portland Trail Blazers,Seattle SuperSonics,Portland Trail Blazers,3:2
+NBA,1991,Portland Trail Blazers,Utah Jazz,Portland Trail Blazers,4:1
+NBA,1992,Boston Celtics,Cleveland Cavaliers,Cleveland Cavaliers,3:4
+NBA,1992,Boston Celtics,Indiana Pacers,Boston Celtics,3:0
+NBA,1992,Chicago Bulls,Cleveland Cavaliers,Chicago Bulls,4:2
+NBA,1992,Chicago Bulls,Miami Heat,Chicago Bulls,3:0
+NBA,1992,Chicago Bulls,New York Knicks,Chicago Bulls,4:3
+NBA,1992,Chicago Bulls,Portland Trail Blazers,Chicago Bulls,4:2
+NBA,1992,Cleveland Cavaliers,New Jersey Nets,Cleveland Cavaliers,3:1
+NBA,1992,Detroit Pistons,New York Knicks,New York Knicks,2:3
+NBA,1992,Golden State Warriors,Seattle SuperSonics,Seattle SuperSonics,1:3
+NBA,1992,Los Angeles Clippers,Utah Jazz,Utah Jazz,2:3
+NBA,1992,Los Angeles Lakers,Portland Trail Blazers,Portland Trail Blazers,1:3
+NBA,1992,Phoenix Suns,Portland Trail Blazers,Portland Trail Blazers,1:4
+NBA,1992,Phoenix Suns,San Antonio Spurs,Phoenix Suns,3:0
+NBA,1992,Portland Trail Blazers,Utah Jazz,Portland Trail Blazers,4:2
+NBA,1992,Seattle SuperSonics,Utah Jazz,Utah Jazz,1:4
+NBA,1993,Atlanta Hawks,Chicago Bulls,Chicago Bulls,0:3
+NBA,1993,Boston Celtics,Charlotte Hornets,Charlotte Hornets,1:3
+NBA,1993,Charlotte Hornets,New York Knicks,New York Knicks,1:4
+NBA,1993,Chicago Bulls,Cleveland Cavaliers,Chicago Bulls,4:0
+NBA,1993,Chicago Bulls,New York Knicks,Chicago Bulls,4:2
+NBA,1993,Chicago Bulls,Phoenix Suns,Chicago Bulls,4:2
+NBA,1993,Cleveland Cavaliers,New Jersey Nets,Cleveland Cavaliers,3:2
+NBA,1993,Houston Rockets,Los Angeles Clippers,Houston Rockets,3:2
+NBA,1993,Houston Rockets,Seattle SuperSonics,Seattle SuperSonics,3:4
+NBA,1993,Indiana Pacers,New York Knicks,New York Knicks,1:3
+NBA,1993,Los Angeles Lakers,Phoenix Suns,Phoenix Suns,2:3
+NBA,1993,Phoenix Suns,San Antonio Spurs,Phoenix Suns,4:2
+NBA,1993,Phoenix Suns,Seattle SuperSonics,Phoenix Suns,4:3
+NBA,1993,Portland Trail Blazers,San Antonio Spurs,San Antonio Spurs,1:3
+NBA,1993,Seattle SuperSonics,Utah Jazz,Seattle SuperSonics,3:2
+NBA,1994,Atlanta Hawks,Indiana Pacers,Indiana Pacers,2:4
+NBA,1994,Atlanta Hawks,Miami Heat,Atlanta Hawks,3:2
+NBA,1994,Chicago Bulls,Cleveland Cavaliers,Chicago Bulls,3:0
+NBA,1994,Chicago Bulls,New York Knicks,New York Knicks,3:4
+NBA,1994,Denver Nuggets,Seattle SuperSonics,Denver Nuggets,3:2
+NBA,1994,Denver Nuggets,Utah Jazz,Utah Jazz,3:4
+NBA,1994,Golden State Warriors,Phoenix Suns,Phoenix Suns,0:3
+NBA,1994,Houston Rockets,New York Knicks,Houston Rockets,4:3
+NBA,1994,Houston Rockets,Phoenix Suns,Houston Rockets,4:3
+NBA,1994,Houston Rockets,Portland Trail Blazers,Houston Rockets,3:1
+NBA,1994,Houston Rockets,Utah Jazz,Houston Rockets,4:1
+NBA,1994,Indiana Pacers,New York Knicks,New York Knicks,3:4
+NBA,1994,Indiana Pacers,Orlando Magic,Indiana Pacers,3:0
+NBA,1994,New Jersey Nets,New York Knicks,New York Knicks,1:3
+NBA,1994,San Antonio Spurs,Utah Jazz,Utah Jazz,1:3
+NBA,1995,Atlanta Hawks,Indiana Pacers,Indiana Pacers,0:3
+NBA,1995,Boston Celtics,Orlando Magic,Orlando Magic,1:3
+NBA,1995,Charlotte Hornets,Chicago Bulls,Chicago Bulls,1:3
+NBA,1995,Chicago Bulls,Orlando Magic,Orlando Magic,2:4
+NBA,1995,Cleveland Cavaliers,New York Knicks,New York Knicks,1:3
+NBA,1995,Denver Nuggets,San Antonio Spurs,San Antonio Spurs,0:3
+NBA,1995,Houston Rockets,Orlando Magic,Houston Rockets,4:0
+NBA,1995,Houston Rockets,Phoenix Suns,Houston Rockets,4:3
+NBA,1995,Houston Rockets,San Antonio Spurs,Houston Rockets,4:2
+NBA,1995,Houston Rockets,Utah Jazz,Houston Rockets,3:2
+NBA,1995,Indiana Pacers,New York Knicks,Indiana Pacers,4:3
+NBA,1995,Indiana Pacers,Orlando Magic,Orlando Magic,3:4
+NBA,1995,Los Angeles Lakers,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,1995,Los Angeles Lakers,Seattle SuperSonics,Los Angeles Lakers,3:1
+NBA,1995,Phoenix Suns,Portland Trail Blazers,Phoenix Suns,3:0
+NBA,1996,Atlanta Hawks,Indiana Pacers,Atlanta Hawks,3:2
+NBA,1996,Atlanta Hawks,Orlando Magic,Orlando Magic,1:4
+NBA,1996,Chicago Bulls,Miami Heat,Chicago Bulls,3:0
+NBA,1996,Chicago Bulls,New York Knicks,Chicago Bulls,4:1
+NBA,1996,Chicago Bulls,Orlando Magic,Chicago Bulls,4:0
+NBA,1996,Chicago Bulls,Seattle SuperSonics,Chicago Bulls,4:2
+NBA,1996,Cleveland Cavaliers,New York Knicks,New York Knicks,0:3
+NBA,1996,Detroit Pistons,Orlando Magic,Orlando Magic,0:3
+NBA,1996,Houston Rockets,Los Angeles Lakers,Houston Rockets,3:1
+NBA,1996,Houston Rockets,Seattle SuperSonics,Seattle SuperSonics,0:4
+NBA,1996,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,1:3
+NBA,1996,Portland Trail Blazers,Utah Jazz,Utah Jazz,2:3
+NBA,1996,Sacramento Kings,Seattle SuperSonics,Seattle SuperSonics,1:3
+NBA,1996,San Antonio Spurs,Utah Jazz,Utah Jazz,2:4
+NBA,1996,Seattle SuperSonics,Utah Jazz,Seattle SuperSonics,4:3
+NBA,1997,Atlanta Hawks,Chicago Bulls,Chicago Bulls,1:4
+NBA,1997,Atlanta Hawks,Detroit Pistons,Atlanta Hawks,3:2
+NBA,1997,Charlotte Hornets,New York Knicks,New York Knicks,0:3
+NBA,1997,Chicago Bulls,Miami Heat,Chicago Bulls,4:1
+NBA,1997,Chicago Bulls,Utah Jazz,Chicago Bulls,4:2
+NBA,1997,Chicago Bulls,Washington Bullets,Chicago Bulls,3:0
+NBA,1997,Houston Rockets,Minnesota Timberwolves,Houston Rockets,3:0
+NBA,1997,Houston Rockets,Seattle SuperSonics,Houston Rockets,4:3
+NBA,1997,Houston Rockets,Utah Jazz,Utah Jazz,2:4
+NBA,1997,Los Angeles Clippers,Utah Jazz,Utah Jazz,0:3
+NBA,1997,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,3:1
+NBA,1997,Los Angeles Lakers,Utah Jazz,Utah Jazz,1:4
+NBA,1997,Miami Heat,New York Knicks,Miami Heat,4:3
+NBA,1997,Miami Heat,Orlando Magic,Miami Heat,3:2
+NBA,1997,Phoenix Suns,Seattle SuperSonics,Seattle SuperSonics,2:3
+NBA,1998,Atlanta Hawks,Charlotte Hornets,Charlotte Hornets,1:3
+NBA,1998,Charlotte Hornets,Chicago Bulls,Chicago Bulls,1:4
+NBA,1998,Chicago Bulls,Indiana Pacers,Chicago Bulls,4:3
+NBA,1998,Chicago Bulls,New Jersey Nets,Chicago Bulls,3:0
+NBA,1998,Chicago Bulls,Utah Jazz,Chicago Bulls,4:2
+NBA,1998,Cleveland Cavaliers,Indiana Pacers,Indiana Pacers,1:3
+NBA,1998,Houston Rockets,Utah Jazz,Utah Jazz,2:3
+NBA,1998,Indiana Pacers,New York Knicks,Indiana Pacers,4:1
+NBA,1998,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,3:1
+NBA,1998,Los Angeles Lakers,Seattle SuperSonics,Los Angeles Lakers,4:1
+NBA,1998,Los Angeles Lakers,Utah Jazz,Utah Jazz,0:4
+NBA,1998,Miami Heat,New York Knicks,New York Knicks,2:3
+NBA,1998,Minnesota Timberwolves,Seattle SuperSonics,Seattle SuperSonics,2:3
+NBA,1998,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,1:3
+NBA,1998,San Antonio Spurs,Utah Jazz,Utah Jazz,1:4
+NBA,1999,Atlanta Hawks,Detroit Pistons,Atlanta Hawks,3:2
+NBA,1999,Atlanta Hawks,New York Knicks,New York Knicks,0:4
+NBA,1999,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,1:3
+NBA,1999,Indiana Pacers,Milwaukee Bucks,Indiana Pacers,3:0
+NBA,1999,Indiana Pacers,New York Knicks,New York Knicks,2:4
+NBA,1999,Indiana Pacers,Philadelphia 76ers,Indiana Pacers,4:0
+NBA,1999,Los Angeles Lakers,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,1999,Miami Heat,New York Knicks,New York Knicks,2:3
+NBA,1999,Minnesota Timberwolves,San Antonio Spurs,San Antonio Spurs,1:3
+NBA,1999,New York Knicks,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,1999,Orlando Magic,Philadelphia 76ers,Philadelphia 76ers,1:3
+NBA,1999,Phoenix Suns,Portland Trail Blazers,Portland Trail Blazers,0:3
+NBA,1999,Portland Trail Blazers,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,1999,Portland Trail Blazers,Utah Jazz,Portland Trail Blazers,4:2
+NBA,1999,Sacramento Kings,Utah Jazz,Utah Jazz,2:3
+NBA,2000,Charlotte Hornets,Philadelphia 76ers,Philadelphia 76ers,1:3
+NBA,2000,Detroit Pistons,Miami Heat,Miami Heat,0:3
+NBA,2000,Indiana Pacers,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,2000,Indiana Pacers,Milwaukee Bucks,Indiana Pacers,3:2
+NBA,2000,Indiana Pacers,New York Knicks,Indiana Pacers,4:2
+NBA,2000,Indiana Pacers,Philadelphia 76ers,Indiana Pacers,4:2
+NBA,2000,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:1
+NBA,2000,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,4:3
+NBA,2000,Los Angeles Lakers,Sacramento Kings,Los Angeles Lakers,3:2
+NBA,2000,Miami Heat,New York Knicks,New York Knicks,3:4
+NBA,2000,Minnesota Timberwolves,Portland Trail Blazers,Portland Trail Blazers,1:3
+NBA,2000,New York Knicks,Toronto Raptors,New York Knicks,3:0
+NBA,2000,Phoenix Suns,San Antonio Spurs,Phoenix Suns,3:1
+NBA,2000,Portland Trail Blazers,Utah Jazz,Portland Trail Blazers,4:1
+NBA,2000,Seattle SuperSonics,Utah Jazz,Utah Jazz,2:3
+NBA,2001,Charlotte Hornets,Miami Heat,Charlotte Hornets,3:0
+NBA,2001,Charlotte Hornets,Milwaukee Bucks,Milwaukee Bucks,3:4
+NBA,2001,Dallas Mavericks,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2001,Dallas Mavericks,Utah Jazz,Dallas Mavericks,3:2
+NBA,2001,Indiana Pacers,Philadelphia 76ers,Philadelphia 76ers,1:3
+NBA,2001,Los Angeles Lakers,Philadelphia 76ers,Los Angeles Lakers,4:1
+NBA,2001,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,3:0
+NBA,2001,Los Angeles Lakers,Sacramento Kings,Los Angeles Lakers,4:0
+NBA,2001,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:0
+NBA,2001,Milwaukee Bucks,Orlando Magic,Milwaukee Bucks,3:1
+NBA,2001,Milwaukee Bucks,Philadelphia 76ers,Philadelphia 76ers,3:4
+NBA,2001,Minnesota Timberwolves,San Antonio Spurs,San Antonio Spurs,1:3
+NBA,2001,New York Knicks,Toronto Raptors,Toronto Raptors,2:3
+NBA,2001,Philadelphia 76ers,Toronto Raptors,Philadelphia 76ers,4:3
+NBA,2001,Phoenix Suns,Sacramento Kings,Sacramento Kings,1:3
+NBA,2002,Boston Celtics,Detroit Pistons,Boston Celtics,4:1
+NBA,2002,Boston Celtics,New Jersey Nets,New Jersey Nets,2:4
+NBA,2002,Boston Celtics,Philadelphia 76ers,Boston Celtics,3:2
+NBA,2002,Charlotte Hornets,New Jersey Nets,New Jersey Nets,1:4
+NBA,2002,Charlotte Hornets,Orlando Magic,Charlotte Hornets,3:1
+NBA,2002,Dallas Mavericks,Minnesota Timberwolves,Dallas Mavericks,3:0
+NBA,2002,Dallas Mavericks,Sacramento Kings,Sacramento Kings,1:4
+NBA,2002,Detroit Pistons,Toronto Raptors,Detroit Pistons,3:2
+NBA,2002,Indiana Pacers,New Jersey Nets,New Jersey Nets,2:3
+NBA,2002,Los Angeles Lakers,New Jersey Nets,Los Angeles Lakers,4:0
+NBA,2002,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,3:0
+NBA,2002,Los Angeles Lakers,Sacramento Kings,Los Angeles Lakers,4:3
+NBA,2002,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:1
+NBA,2002,Sacramento Kings,Utah Jazz,Sacramento Kings,3:1
+NBA,2002,San Antonio Spurs,Seattle SuperSonics,San Antonio Spurs,3:2
+NBA,2003,Boston Celtics,Indiana Pacers,Boston Celtics,4:2
+NBA,2003,Boston Celtics,New Jersey Nets,New Jersey Nets,0:4
+NBA,2003,Dallas Mavericks,Portland Trail Blazers,Dallas Mavericks,4:3
+NBA,2003,Dallas Mavericks,Sacramento Kings,Dallas Mavericks,4:3
+NBA,2003,Dallas Mavericks,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2003,Detroit Pistons,New Jersey Nets,New Jersey Nets,0:4
+NBA,2003,Detroit Pistons,Orlando Magic,Detroit Pistons,4:3
+NBA,2003,Detroit Pistons,Philadelphia 76ers,Detroit Pistons,4:2
+NBA,2003,Los Angeles Lakers,Minnesota Timberwolves,Los Angeles Lakers,4:2
+NBA,2003,Los Angeles Lakers,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2003,Milwaukee Bucks,New Jersey Nets,New Jersey Nets,2:4
+NBA,2003,New Jersey Nets,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2003,New Orleans Hornets,Philadelphia 76ers,Philadelphia 76ers,2:4
+NBA,2003,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2003,Sacramento Kings,Utah Jazz,Sacramento Kings,4:1
+NBA,2004,Boston Celtics,Indiana Pacers,Indiana Pacers,0:4
+NBA,2004,Dallas Mavericks,Sacramento Kings,Sacramento Kings,1:4
+NBA,2004,Denver Nuggets,Minnesota Timberwolves,Minnesota Timberwolves,1:4
+NBA,2004,Detroit Pistons,Indiana Pacers,Detroit Pistons,4:2
+NBA,2004,Detroit Pistons,Los Angeles Lakers,Detroit Pistons,4:1
+NBA,2004,Detroit Pistons,Milwaukee Bucks,Detroit Pistons,4:1
+NBA,2004,Detroit Pistons,New Jersey Nets,Detroit Pistons,4:3
+NBA,2004,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,2004,Indiana Pacers,Miami Heat,Indiana Pacers,4:2
+NBA,2004,Los Angeles Lakers,Minnesota Timberwolves,Los Angeles Lakers,4:2
+NBA,2004,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:2
+NBA,2004,Memphis Grizzlies,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2004,Miami Heat,New Orleans Hornets,Miami Heat,4:3
+NBA,2004,Minnesota Timberwolves,Sacramento Kings,Minnesota Timberwolves,4:3
+NBA,2004,New Jersey Nets,New York Knicks,New Jersey Nets,4:0
+NBA,2005,Boston Celtics,Indiana Pacers,Indiana Pacers,3:4
+NBA,2005,Chicago Bulls,Washington Wizards,Washington Wizards,2:4
+NBA,2005,Dallas Mavericks,Houston Rockets,Dallas Mavericks,4:3
+NBA,2005,Dallas Mavericks,Phoenix Suns,Phoenix Suns,2:4
+NBA,2005,Denver Nuggets,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2005,Detroit Pistons,Indiana Pacers,Detroit Pistons,4:2
+NBA,2005,Detroit Pistons,Miami Heat,Detroit Pistons,4:3
+NBA,2005,Detroit Pistons,Philadelphia 76ers,Detroit Pistons,4:1
+NBA,2005,Detroit Pistons,San Antonio Spurs,San Antonio Spurs,3:4
+NBA,2005,Memphis Grizzlies,Phoenix Suns,Phoenix Suns,0:4
+NBA,2005,Miami Heat,New Jersey Nets,Miami Heat,4:0
+NBA,2005,Miami Heat,Washington Wizards,Miami Heat,4:0
+NBA,2005,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2005,Sacramento Kings,Seattle SuperSonics,Seattle SuperSonics,1:4
+NBA,2005,San Antonio Spurs,Seattle SuperSonics,San Antonio Spurs,4:2
+NBA,2006,Chicago Bulls,Miami Heat,Miami Heat,2:4
+NBA,2006,Cleveland Cavaliers,Detroit Pistons,Detroit Pistons,3:4
+NBA,2006,Cleveland Cavaliers,Washington Wizards,Cleveland Cavaliers,4:2
+NBA,2006,Dallas Mavericks,Memphis Grizzlies,Dallas Mavericks,4:0
+NBA,2006,Dallas Mavericks,Miami Heat,Miami Heat,2:4
+NBA,2006,Dallas Mavericks,Phoenix Suns,Dallas Mavericks,4:2
+NBA,2006,Dallas Mavericks,San Antonio Spurs,Dallas Mavericks,4:3
+NBA,2006,Denver Nuggets,Los Angeles Clippers,Los Angeles Clippers,1:4
+NBA,2006,Detroit Pistons,Miami Heat,Miami Heat,2:4
+NBA,2006,Detroit Pistons,Milwaukee Bucks,Detroit Pistons,4:1
+NBA,2006,Indiana Pacers,New Jersey Nets,New Jersey Nets,2:4
+NBA,2006,Los Angeles Clippers,Phoenix Suns,Phoenix Suns,3:4
+NBA,2006,Los Angeles Lakers,Phoenix Suns,Phoenix Suns,3:4
+NBA,2006,Miami Heat,New Jersey Nets,Miami Heat,4:1
+NBA,2006,Sacramento Kings,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2007,Chicago Bulls,Detroit Pistons,Detroit Pistons,2:4
+NBA,2007,Chicago Bulls,Miami Heat,Chicago Bulls,4:0
+NBA,2007,Cleveland Cavaliers,Detroit Pistons,Cleveland Cavaliers,4:2
+NBA,2007,Cleveland Cavaliers,New Jersey Nets,Cleveland Cavaliers,4:2
+NBA,2007,Cleveland Cavaliers,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2007,Cleveland Cavaliers,Washington Wizards,Cleveland Cavaliers,4:0
+NBA,2007,Dallas Mavericks,Golden State Warriors,Golden State Warriors,2:4
+NBA,2007,Denver Nuggets,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2007,Detroit Pistons,Orlando Magic,Detroit Pistons,4:0
+NBA,2007,Golden State Warriors,Utah Jazz,Utah Jazz,1:4
+NBA,2007,Houston Rockets,Utah Jazz,Utah Jazz,3:4
+NBA,2007,Los Angeles Lakers,Phoenix Suns,Phoenix Suns,1:4
+NBA,2007,New Jersey Nets,Toronto Raptors,New Jersey Nets,4:2
+NBA,2007,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2007,San Antonio Spurs,Utah Jazz,San Antonio Spurs,4:1
+NBA,2008,Atlanta Hawks,Boston Celtics,Boston Celtics,3:4
+NBA,2008,Boston Celtics,Cleveland Cavaliers,Boston Celtics,4:3
+NBA,2008,Boston Celtics,Detroit Pistons,Boston Celtics,4:2
+NBA,2008,Boston Celtics,Los Angeles Lakers,Boston Celtics,4:2
+NBA,2008,Cleveland Cavaliers,Washington Wizards,Cleveland Cavaliers,4:2
+NBA,2008,Dallas Mavericks,New Orleans Hornets,New Orleans Hornets,1:4
+NBA,2008,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,0:4
+NBA,2008,Detroit Pistons,Orlando Magic,Detroit Pistons,4:1
+NBA,2008,Detroit Pistons,Philadelphia 76ers,Detroit Pistons,4:2
+NBA,2008,Houston Rockets,Utah Jazz,Utah Jazz,2:4
+NBA,2008,Los Angeles Lakers,San Antonio Spurs,Los Angeles Lakers,4:1
+NBA,2008,Los Angeles Lakers,Utah Jazz,Los Angeles Lakers,4:2
+NBA,2008,New Orleans Hornets,San Antonio Spurs,San Antonio Spurs,3:4
+NBA,2008,Orlando Magic,Toronto Raptors,Orlando Magic,4:1
+NBA,2008,Phoenix Suns,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2009,Atlanta Hawks,Cleveland Cavaliers,Cleveland Cavaliers,0:4
+NBA,2009,Atlanta Hawks,Miami Heat,Atlanta Hawks,4:3
+NBA,2009,Boston Celtics,Chicago Bulls,Boston Celtics,4:3
+NBA,2009,Boston Celtics,Orlando Magic,Orlando Magic,3:4
+NBA,2009,Cleveland Cavaliers,Detroit Pistons,Cleveland Cavaliers,4:0
+NBA,2009,Cleveland Cavaliers,Orlando Magic,Orlando Magic,2:4
+NBA,2009,Dallas Mavericks,Denver Nuggets,Denver Nuggets,1:4
+NBA,2009,Dallas Mavericks,San Antonio Spurs,Dallas Mavericks,4:1
+NBA,2009,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,2009,Denver Nuggets,New Orleans Hornets,Denver Nuggets,4:1
+NBA,2009,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,2009,Houston Rockets,Portland Trail Blazers,Houston Rockets,4:2
+NBA,2009,Los Angeles Lakers,Orlando Magic,Los Angeles Lakers,4:1
+NBA,2009,Los Angeles Lakers,Utah Jazz,Los Angeles Lakers,4:1
+NBA,2009,Orlando Magic,Philadelphia 76ers,Orlando Magic,4:2
+NBA,2010,Atlanta Hawks,Milwaukee Bucks,Atlanta Hawks,4:3
+NBA,2010,Atlanta Hawks,Orlando Magic,Orlando Magic,0:4
+NBA,2010,Boston Celtics,Cleveland Cavaliers,Boston Celtics,4:2
+NBA,2010,Boston Celtics,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,2010,Boston Celtics,Miami Heat,Boston Celtics,4:1
+NBA,2010,Boston Celtics,Orlando Magic,Boston Celtics,4:2
+NBA,2010,Charlotte Bobcats,Orlando Magic,Orlando Magic,0:4
+NBA,2010,Chicago Bulls,Cleveland Cavaliers,Cleveland Cavaliers,1:4
+NBA,2010,Dallas Mavericks,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2010,Denver Nuggets,Utah Jazz,Utah Jazz,2:4
+NBA,2010,Los Angeles Lakers,Oklahoma City Thunder,Los Angeles Lakers,4:2
+NBA,2010,Los Angeles Lakers,Phoenix Suns,Los Angeles Lakers,4:2
+NBA,2010,Los Angeles Lakers,Utah Jazz,Los Angeles Lakers,4:0
+NBA,2010,Phoenix Suns,Portland Trail Blazers,Phoenix Suns,4:2
+NBA,2010,Phoenix Suns,San Antonio Spurs,Phoenix Suns,4:0
+NBA,2011,Atlanta Hawks,Chicago Bulls,Chicago Bulls,2:4
+NBA,2011,Atlanta Hawks,Orlando Magic,Atlanta Hawks,4:2
+NBA,2011,Boston Celtics,Miami Heat,Miami Heat,1:4
+NBA,2011,Boston Celtics,New York Knicks,Boston Celtics,4:0
+NBA,2011,Chicago Bulls,Indiana Pacers,Chicago Bulls,4:1
+NBA,2011,Chicago Bulls,Miami Heat,Miami Heat,1:4
+NBA,2011,Dallas Mavericks,Los Angeles Lakers,Dallas Mavericks,4:0
+NBA,2011,Dallas Mavericks,Miami Heat,Dallas Mavericks,4:2
+NBA,2011,Dallas Mavericks,Oklahoma City Thunder,Dallas Mavericks,4:1
+NBA,2011,Dallas Mavericks,Portland Trail Blazers,Dallas Mavericks,4:2
+NBA,2011,Denver Nuggets,Oklahoma City Thunder,Oklahoma City Thunder,1:4
+NBA,2011,Los Angeles Lakers,New Orleans Hornets,Los Angeles Lakers,4:2
+NBA,2011,Memphis Grizzlies,Oklahoma City Thunder,Oklahoma City Thunder,3:4
+NBA,2011,Memphis Grizzlies,San Antonio Spurs,Memphis Grizzlies,4:2
+NBA,2011,Miami Heat,Philadelphia 76ers,Miami Heat,4:1
+NBA,2012,Atlanta Hawks,Boston Celtics,Boston Celtics,2:4
+NBA,2012,Boston Celtics,Miami Heat,Miami Heat,3:4
+NBA,2012,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:3
+NBA,2012,Chicago Bulls,Philadelphia 76ers,Philadelphia 76ers,2:4
+NBA,2012,Dallas Mavericks,Oklahoma City Thunder,Oklahoma City Thunder,0:4
+NBA,2012,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,3:4
+NBA,2012,Indiana Pacers,Miami Heat,Miami Heat,2:4
+NBA,2012,Indiana Pacers,Orlando Magic,Indiana Pacers,4:1
+NBA,2012,Los Angeles Clippers,Memphis Grizzlies,Los Angeles Clippers,4:3
+NBA,2012,Los Angeles Clippers,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2012,Los Angeles Lakers,Oklahoma City Thunder,Oklahoma City Thunder,1:4
+NBA,2012,Miami Heat,New York Knicks,Miami Heat,4:1
+NBA,2012,Miami Heat,Oklahoma City Thunder,Miami Heat,4:1
+NBA,2012,Oklahoma City Thunder,San Antonio Spurs,Oklahoma City Thunder,4:2
+NBA,2012,San Antonio Spurs,Utah Jazz,San Antonio Spurs,4:0
+NBA,2013,Atlanta Hawks,Indiana Pacers,Indiana Pacers,2:4
+NBA,2013,Boston Celtics,New York Knicks,New York Knicks,2:4
+NBA,2013,Brooklyn Nets,Chicago Bulls,Chicago Bulls,3:4
+NBA,2013,Chicago Bulls,Miami Heat,Miami Heat,1:4
+NBA,2013,Denver Nuggets,Golden State Warriors,Golden State Warriors,2:4
+NBA,2013,Golden State Warriors,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2013,Houston Rockets,Oklahoma City Thunder,Oklahoma City Thunder,2:4
+NBA,2013,Indiana Pacers,Miami Heat,Miami Heat,3:4
+NBA,2013,Indiana Pacers,New York Knicks,Indiana Pacers,4:2
+NBA,2013,Los Angeles Clippers,Memphis Grizzlies,Memphis Grizzlies,2:4
+NBA,2013,Los Angeles Lakers,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2013,Memphis Grizzlies,Oklahoma City Thunder,Memphis Grizzlies,4:1
+NBA,2013,Memphis Grizzlies,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2013,Miami Heat,Milwaukee Bucks,Miami Heat,4:0
+NBA,2013,Miami Heat,San Antonio Spurs,Miami Heat,4:3
+NBA,2014,Atlanta Hawks,Indiana Pacers,Indiana Pacers,3:4
+NBA,2014,Brooklyn Nets,Miami Heat,Miami Heat,1:4
+NBA,2014,Brooklyn Nets,Toronto Raptors,Brooklyn Nets,4:3
+NBA,2014,Charlotte Bobcats,Miami Heat,Miami Heat,0:4
+NBA,2014,Chicago Bulls,Washington Wizards,Washington Wizards,1:4
+NBA,2014,Dallas Mavericks,San Antonio Spurs,San Antonio Spurs,3:4
+NBA,2014,Golden State Warriors,Los Angeles Clippers,Los Angeles Clippers,3:4
+NBA,2014,Houston Rockets,Portland Trail Blazers,Portland Trail Blazers,2:4
+NBA,2014,Indiana Pacers,Miami Heat,Miami Heat,2:4
+NBA,2014,Indiana Pacers,Washington Wizards,Indiana Pacers,4:2
+NBA,2014,Los Angeles Clippers,Oklahoma City Thunder,Oklahoma City Thunder,2:4
+NBA,2014,Memphis Grizzlies,Oklahoma City Thunder,Oklahoma City Thunder,3:4
+NBA,2014,Miami Heat,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2014,Oklahoma City Thunder,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2014,Portland Trail Blazers,San Antonio Spurs,San Antonio Spurs,1:4
+NBA,2015,Atlanta Hawks,Brooklyn Nets,Atlanta Hawks,4:2
+NBA,2015,Atlanta Hawks,Cleveland Cavaliers,Cleveland Cavaliers,0:4
+NBA,2015,Atlanta Hawks,Washington Wizards,Atlanta Hawks,4:2
+NBA,2015,Boston Celtics,Cleveland Cavaliers,Cleveland Cavaliers,0:4
+NBA,2015,Chicago Bulls,Cleveland Cavaliers,Cleveland Cavaliers,2:4
+NBA,2015,Chicago Bulls,Milwaukee Bucks,Chicago Bulls,4:2
+NBA,2015,Cleveland Cavaliers,Golden State Warriors,Golden State Warriors,2:4
+NBA,2015,Dallas Mavericks,Houston Rockets,Houston Rockets,1:4
+NBA,2015,Golden State Warriors,Houston Rockets,Golden State Warriors,4:1
+NBA,2015,Golden State Warriors,Memphis Grizzlies,Golden State Warriors,4:2
+NBA,2015,Golden State Warriors,New Orleans Pelicans,Golden State Warriors,4:0
+NBA,2015,Houston Rockets,Los Angeles Clippers,Houston Rockets,4:3
+NBA,2015,Los Angeles Clippers,San Antonio Spurs,Los Angeles Clippers,4:3
+NBA,2015,Memphis Grizzlies,Portland Trail Blazers,Memphis Grizzlies,4:1
+NBA,2015,Toronto Raptors,Washington Wizards,Washington Wizards,0:4
+NBA,2016,Atlanta Hawks,Boston Celtics,Atlanta Hawks,4:2
+NBA,2016,Atlanta Hawks,Cleveland Cavaliers,Cleveland Cavaliers,0:4
+NBA,2016,Charlotte Hornets,Miami Heat,Miami Heat,3:4
+NBA,2016,Cleveland Cavaliers,Detroit Pistons,Cleveland Cavaliers,4:0
+NBA,2016,Cleveland Cavaliers,Golden State Warriors,Cleveland Cavaliers,4:3
+NBA,2016,Cleveland Cavaliers,Toronto Raptors,Cleveland Cavaliers,4:2
+NBA,2016,Dallas Mavericks,Oklahoma City Thunder,Oklahoma City Thunder,1:4
+NBA,2016,Golden State Warriors,Houston Rockets,Golden State Warriors,4:1
+NBA,2016,Golden State Warriors,Oklahoma City Thunder,Golden State Warriors,4:3
+NBA,2016,Golden State Warriors,Portland Trail Blazers,Golden State Warriors,4:1
+NBA,2016,Indiana Pacers,Toronto Raptors,Toronto Raptors,3:4
+NBA,2016,Los Angeles Clippers,Portland Trail Blazers,Portland Trail Blazers,2:4
+NBA,2016,Memphis Grizzlies,San Antonio Spurs,San Antonio Spurs,0:4
+NBA,2016,Miami Heat,Toronto Raptors,Toronto Raptors,3:4
+NBA,2016,Oklahoma City Thunder,San Antonio Spurs,Oklahoma City Thunder,4:2
+NBA,2017,Atlanta Hawks,Washington Wizards,Washington Wizards,2:4
+NBA,2017,Boston Celtics,Chicago Bulls,Boston Celtics,4:2
+NBA,2017,Boston Celtics,Cleveland Cavaliers,Cleveland Cavaliers,1:4
+NBA,2017,Boston Celtics,Washington Wizards,Boston Celtics,4:3
+NBA,2017,Cleveland Cavaliers,Golden State Warriors,Golden State Warriors,1:4
+NBA,2017,Cleveland Cavaliers,Indiana Pacers,Cleveland Cavaliers,4:0
+NBA,2017,Cleveland Cavaliers,Toronto Raptors,Cleveland Cavaliers,4:0
+NBA,2017,Golden State Warriors,Portland Trail Blazers,Golden State Warriors,4:0
+NBA,2017,Golden State Warriors,San Antonio Spurs,Golden State Warriors,4:0
+NBA,2017,Golden State Warriors,Utah Jazz,Golden State Warriors,4:0
+NBA,2017,Houston Rockets,Oklahoma City Thunder,Houston Rockets,4:1
+NBA,2017,Houston Rockets,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2017,Los Angeles Clippers,Utah Jazz,Utah Jazz,3:4
+NBA,2017,Memphis Grizzlies,San Antonio Spurs,San Antonio Spurs,2:4
+NBA,2017,Milwaukee Bucks,Toronto Raptors,Toronto Raptors,2:4
+NBA,2018,Boston Celtics,Cleveland Cavaliers,Cleveland Cavaliers,3:4
+NBA,2018,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:3
+NBA,2018,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:1
+NBA,2018,Cleveland Cavaliers,Golden State Warriors,Golden State Warriors,0:4
+NBA,2018,Cleveland Cavaliers,Indiana Pacers,Cleveland Cavaliers,4:3
+NBA,2018,Cleveland Cavaliers,Toronto Raptors,Cleveland Cavaliers,4:0
+NBA,2018,Golden State Warriors,Houston Rockets,Golden State Warriors,4:3
+NBA,2018,Golden State Warriors,New Orleans Pelicans,Golden State Warriors,4:1
+NBA,2018,Golden State Warriors,San Antonio Spurs,Golden State Warriors,4:1
+NBA,2018,Houston Rockets,Minnesota Timberwolves,Houston Rockets,4:1
+NBA,2018,Houston Rockets,Utah Jazz,Houston Rockets,4:1
+NBA,2018,Miami Heat,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,2018,New Orleans Pelicans,Portland Trail Blazers,New Orleans Pelicans,4:0
+NBA,2018,Oklahoma City Thunder,Utah Jazz,Utah Jazz,2:4
+NBA,2018,Toronto Raptors,Washington Wizards,Toronto Raptors,4:2
+NBA,2019,Boston Celtics,Indiana Pacers,Boston Celtics,4:0
+NBA,2019,Boston Celtics,Milwaukee Bucks,Milwaukee Bucks,1:4
+NBA,2019,Brooklyn Nets,Philadelphia 76ers,Philadelphia 76ers,1:4
+NBA,2019,Denver Nuggets,Portland Trail Blazers,Portland Trail Blazers,3:4
+NBA,2019,Denver Nuggets,San Antonio Spurs,Denver Nuggets,4:3
+NBA,2019,Detroit Pistons,Milwaukee Bucks,Milwaukee Bucks,0:4
+NBA,2019,Golden State Warriors,Houston Rockets,Golden State Warriors,4:2
+NBA,2019,Golden State Warriors,Los Angeles Clippers,Golden State Warriors,4:2
+NBA,2019,Golden State Warriors,Portland Trail Blazers,Golden State Warriors,4:0
+NBA,2019,Golden State Warriors,Toronto Raptors,Toronto Raptors,2:4
+NBA,2019,Houston Rockets,Utah Jazz,Houston Rockets,4:1
+NBA,2019,Milwaukee Bucks,Toronto Raptors,Toronto Raptors,2:4
+NBA,2019,Oklahoma City Thunder,Portland Trail Blazers,Portland Trail Blazers,1:4
+NBA,2019,Orlando Magic,Toronto Raptors,Toronto Raptors,1:4
+NBA,2019,Philadelphia 76ers,Toronto Raptors,Toronto Raptors,3:4
+NBA,2020,Boston Celtics,Miami Heat,Miami Heat,2:4
+NBA,2020,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:0
+NBA,2020,Boston Celtics,Toronto Raptors,Boston Celtics,4:3
+NBA,2020,Brooklyn Nets,Toronto Raptors,Toronto Raptors,0:4
+NBA,2020,Dallas Mavericks,Los Angeles Clippers,Los Angeles Clippers,2:4
+NBA,2020,Denver Nuggets,Los Angeles Clippers,Denver Nuggets,4:3
+NBA,2020,Denver Nuggets,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,2020,Denver Nuggets,Utah Jazz,Denver Nuggets,4:3
+NBA,2020,Houston Rockets,Los Angeles Lakers,Los Angeles Lakers,1:4
+NBA,2020,Houston Rockets,Oklahoma City Thunder,Houston Rockets,4:3
+NBA,2020,Indiana Pacers,Miami Heat,Miami Heat,0:4
+NBA,2020,Los Angeles Lakers,Miami Heat,Los Angeles Lakers,4:2
+NBA,2020,Los Angeles Lakers,Portland Trail Blazers,Los Angeles Lakers,4:1
+NBA,2020,Miami Heat,Milwaukee Bucks,Miami Heat,4:1
+NBA,2020,Milwaukee Bucks,Orlando Magic,Milwaukee Bucks,4:1
+NBA,2021,Atlanta Hawks,Milwaukee Bucks,Milwaukee Bucks,2:4
+NBA,2021,Atlanta Hawks,New York Knicks,Atlanta Hawks,4:1
+NBA,2021,Atlanta Hawks,Philadelphia 76ers,Atlanta Hawks,4:3
+NBA,2021,Boston Celtics,Brooklyn Nets,Brooklyn Nets,1:4
+NBA,2021,Brooklyn Nets,Milwaukee Bucks,Milwaukee Bucks,3:4
+NBA,2021,Dallas Mavericks,Los Angeles Clippers,Los Angeles Clippers,3:4
+NBA,2021,Denver Nuggets,Phoenix Suns,Phoenix Suns,0:4
+NBA,2021,Denver Nuggets,Portland Trail Blazers,Denver Nuggets,4:2
+NBA,2021,Los Angeles Clippers,Phoenix Suns,Phoenix Suns,2:4
+NBA,2021,Los Angeles Clippers,Utah Jazz,Los Angeles Clippers,4:2
+NBA,2021,Los Angeles Lakers,Phoenix Suns,Phoenix Suns,2:4
+NBA,2021,Memphis Grizzlies,Utah Jazz,Utah Jazz,1:4
+NBA,2021,Miami Heat,Milwaukee Bucks,Milwaukee Bucks,0:4
+NBA,2021,Milwaukee Bucks,Phoenix Suns,Milwaukee Bucks,4:2
+NBA,2021,Philadelphia 76ers,Washington Wizards,Philadelphia 76ers,4:1
+NBA,2022,Atlanta Hawks,Miami Heat,Miami Heat,1:4
+NBA,2022,Boston Celtics,Brooklyn Nets,Boston Celtics,4:0
+NBA,2022,Boston Celtics,Golden State Warriors,Golden State Warriors,2:4
+NBA,2022,Boston Celtics,Miami Heat,Boston Celtics,4:3
+NBA,2022,Boston Celtics,Milwaukee Bucks,Boston Celtics,4:3
+NBA,2022,Chicago Bulls,Milwaukee Bucks,Milwaukee Bucks,1:4
+NBA,2022,Dallas Mavericks,Golden State Warriors,Golden State Warriors,1:4
+NBA,2022,Dallas Mavericks,Phoenix Suns,Dallas Mavericks,4:3
+NBA,2022,Dallas Mavericks,Utah Jazz,Dallas Mavericks,4:2
+NBA,2022,Denver Nuggets,Golden State Warriors,Golden State Warriors,1:4
+NBA,2022,Golden State Warriors,Memphis Grizzlies,Golden State Warriors,4:2
+NBA,2022,Memphis Grizzlies,Minnesota Timberwolves,Memphis Grizzlies,4:2
+NBA,2022,Miami Heat,Philadelphia 76ers,Miami Heat,4:2
+NBA,2022,New Orleans Pelicans,Phoenix Suns,Phoenix Suns,2:4
+NBA,2022,Philadelphia 76ers,Toronto Raptors,Philadelphia 76ers,4:2
+NBA,2023,Atlanta Hawks,Boston Celtics,Boston Celtics,2:4
+NBA,2023,Boston Celtics,Miami Heat,Miami Heat,3:4
+NBA,2023,Boston Celtics,Philadelphia 76ers,Boston Celtics,4:3
+NBA,2023,Brooklyn Nets,Philadelphia 76ers,Philadelphia 76ers,0:4
+NBA,2023,Cleveland Cavaliers,New York Knicks,New York Knicks,1:4
+NBA,2023,Denver Nuggets,Los Angeles Lakers,Denver Nuggets,4:0
+NBA,2023,Denver Nuggets,Miami Heat,Denver Nuggets,4:1
+NBA,2023,Denver Nuggets,Minnesota Timberwolves,Denver Nuggets,4:1
+NBA,2023,Denver Nuggets,Phoenix Suns,Denver Nuggets,4:2
+NBA,2023,Golden State Warriors,Los Angeles Lakers,Los Angeles Lakers,2:4
+NBA,2023,Golden State Warriors,Sacramento Kings,Golden State Warriors,4:3
+NBA,2023,Los Angeles Clippers,Phoenix Suns,Phoenix Suns,1:4
+NBA,2023,Los Angeles Lakers,Memphis Grizzlies,Los Angeles Lakers,4:2
+NBA,2023,Miami Heat,Milwaukee Bucks,Miami Heat,4:1
+NBA,2023,Miami Heat,New York Knicks,Miami Heat,4:2
+NBA,2024,Boston Celtics,Cleveland Cavaliers,Boston Celtics,4:1
+NBA,2024,Boston Celtics,Dallas Mavericks,Boston Celtics,4:1
+NBA,2024,Boston Celtics,Indiana Pacers,Boston Celtics,4:0
+NBA,2024,Boston Celtics,Miami Heat,Boston Celtics,4:1
+NBA,2024,Cleveland Cavaliers,Orlando Magic,Cleveland Cavaliers,4:3
+NBA,2024,Dallas Mavericks,Los Angeles Clippers,Dallas Mavericks,4:2
+NBA,2024,Dallas Mavericks,Minnesota Timberwolves,Dallas Mavericks,4:1
+NBA,2024,Dallas Mavericks,Oklahoma City Thunder,Dallas Mavericks,4:2
+NBA,2024,Denver Nuggets,Los Angeles Lakers,Denver Nuggets,4:1
+NBA,2024,Denver Nuggets,Minnesota Timberwolves,Minnesota Timberwolves,3:4
+NBA,2024,Indiana Pacers,Milwaukee Bucks,Indiana Pacers,4:2
+NBA,2024,Indiana Pacers,New York Knicks,Indiana Pacers,4:3
+NBA,2024,Minnesota Timberwolves,Phoenix Suns,Minnesota Timberwolves,4:0
+NBA,2024,New Orleans Pelicans,Oklahoma City Thunder,Oklahoma City Thunder,0:4
+NBA,2024,New York Knicks,Philadelphia 76ers,New York Knicks,4:2
+NBA,2025,Boston Celtics,New York Knicks,New York Knicks,2:3
+NBA,2025,Boston Celtics,Orlando Magic,Boston Celtics,4:1
+NBA,2025,Cleveland Cavaliers,Indiana Pacers,Indiana Pacers,1:4
+NBA,2025,Cleveland Cavaliers,Miami Heat,Cleveland Cavaliers,4:0
+NBA,2025,Denver Nuggets,Los Angeles Clippers,Denver Nuggets,4:3
+NBA,2025,Denver Nuggets,Oklahoma City Thunder,Oklahoma City Thunder,2:3
+NBA,2025,Detroit Pistons,New York Knicks,New York Knicks,2:4
+NBA,2025,Golden State Warriors,Houston Rockets,Golden State Warriors,4:3
+NBA,2025,Golden State Warriors,Minnesota Timberwolves,Minnesota Timberwolves,1:4
+NBA,2025,Indiana Pacers,Milwaukee Bucks,Indiana Pacers,4:1
+NBA,2025,Los Angeles Lakers,Minnesota Timberwolves,Minnesota Timberwolves,1:4
+NBA,2025,Memphis Grizzlies,Oklahoma City Thunder,Oklahoma City Thunder,0:4
