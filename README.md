@@ -75,13 +75,10 @@ It includes data scraping, Elo calculation, multiple Elo model variations, model
   Entry point for the Streamlit dashboard. Provides landing page with app overview, data status, and links to all pages.  
 
 - **`elo_analysis.py`**  
-  (Optional) Playground script for ad-hoc analysis outside of the dashboard. Reads from `Data/` and can generate custom plots/tables.  
+  Playground script for ad-hoc analysis outside of the dashboard. Reads from `Data/` and can generate custom plots/tables.  
 
 - **`requirements.txt`**  
-  Python dependencies (Streamlit, Pandas, NumPy, Plotly, Matplotlib, etc.).  
-
-- **`notes.md`**  
-  Developer notes and to-do items (e.g., how to classify Play-In games).  
+  Python dependencies (Streamlit, Pandas, NumPy, Plotly, Matplotlib, etc.).   
 
 ### Data prep notebooks
 - **`scrape_data.ipynb`**  
