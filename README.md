@@ -34,40 +34,6 @@ It includes data scraping, Elo calculation, multiple Elo model variations, evalu
 
 ---
 
-## Repository Structure
-
-NBA_teams_elo/
-│
-├── Data/
-│ ├── match_data.csv # Preprocessed NBA matches
-│ ├── elo_history/ # Elo rating histories (csv + json)
-│ ├── team_stats/ # Team Elo + stats by season (json)
-│ ├── model_stats/ # Model evaluation results (json)
-│ ├── playoff_results/ # Actual playoff series outcomes (csv)
-│ └── custom/ # Non-destructive variants (e.g., Play-In adjusted CSV)
-│
-├── pages/ # Streamlit multipage app
-│ ├── 1_Elo_Progression.py
-│ ├── 2_Elo_vs_Win.py
-│ ├── 3_Model_Leaderboard.py
-│ ├── 4_Playoff_Predictions.py
-│ ├── 5_Series_Simulator.py
-│ ├── 6_Champion_Leaderboard.py
-│ ├── 7_Season_End_Rankings.py
-│ └── 8_Model_Radar.py
-│
-├── calculate_elo.py # Elo rating engine (exports Data/elo_history & team_stats)
-├── evaluate_models.py # Model evaluation & playoff series aggregation
-├── plot_figures.py # Local plotting utilities
-├── dashboard.py # Entry point for Streamlit dashboard
-├── scrape_data.ipynb # Scraping (optional)
-├── combine_scraped_data.ipynb # Data preprocessing (optional)
-├── requirements.txt # Dependencies (UTF-8)
-├── notes.md # Development notes / to-do
-└── README.md # This file
-
----
-
 ## ⚙️ Installation
 
 ```bash
