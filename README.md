@@ -71,6 +71,6 @@ NBA_teams_elo/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/NBA_teams_elo.git
+git clone https://github.com/dominik-sv/NBA_teams_elo.git
 cd NBA_teams_elo
 pip install -r requirements.txt
