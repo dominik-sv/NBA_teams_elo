@@ -21,35 +21,75 @@ It includes data scraping, Elo calculation, multiple Elo model variations, model
 
 ## Repository Structure
 
-NBA_teams_elo/
-Data/
-    match_data.csv # Preprocessed NBA matches
-    elo_history/ # Elo rating histories (csv + json)
-    team_stats/ # Team Elo + stats by season (json)
-    model_stats/ # Model evaluation results (json)
-    playoff_results/ # Actual playoff outcomes (csv)
-    custom/ # Non-destructive variants (e.g., Play-In adjusted CSV)
+# NBA_teams_elo
 
-pages/ # Streamlit multipage app
-    1_Elo_Progression.py
-    2_Elo_vs_Win.py
-    3_Model_Leaderboard.py
-    4_Playoff_Predictions.py
-    5_Series_Simulator.py
-    6_Champion_Leaderboard.py
-    7_Season_End_Rankings.py
-    8_Model_Radar.py
-
-README.md # This file
-requirements.txt # Dependencies
-notes.md # Development notes / to-do list
-scrape_data.ipynb # Web scraping notebook
-combine_scraped_data.ipynb # Data preprocessing notebook
-calculate_elo.py # Elo rating engine
-elo_analysis.py # Ad-hoc analysis (optional/custom script)
-evaluate_models.py # Model evaluation & playoff series aggregation
-plot_figures.py # Plotting utilities
-dashboard.py # Streamlit entry point
+* [Data/](./NBA_teams_elo/Data)
+  * [elo_history/](./NBA_teams_elo/Data/elo_history)
+    * [elo_constants.json](./NBA_teams_elo/Data/elo_history/elo_constants.json)
+    * [elo_df_basic.csv](./NBA_teams_elo/Data/elo_history/elo_df_basic.csv)
+    * [elo_df_home_adv.csv](./NBA_teams_elo/Data/elo_history/elo_df_home_adv.csv)
+    * [elo_df_margin.csv](./NBA_teams_elo/Data/elo_history/elo_df_margin.csv)
+    * [elo_df_transfer_elo.csv](./NBA_teams_elo/Data/elo_history/elo_df_transfer_elo.csv)
+    * [elo_df_updK_end.csv](./NBA_teams_elo/Data/elo_history/elo_df_updK_end.csv)
+    * [elo_df_updK_start.csv](./NBA_teams_elo/Data/elo_history/elo_df_updK_start.csv)
+  * [model_stats/](./NBA_teams_elo/Data/model_stats)
+    * [model_stats.json](./NBA_teams_elo/Data/model_stats/model_stats.json)
+  * [playoff_results/](./NBA_teams_elo/Data/playoff_results)
+    * [results.csv](./NBA_teams_elo/Data/playoff_results/results.csv)
+  * [team_stats/](./NBA_teams_elo/Data/team_stats)
+    * [team_stats.json](./NBA_teams_elo/Data/team_stats/team_stats.json)
+  * [match_data.csv](./NBA_teams_elo/Data/match_data.csv)
+* [pages/](./NBA_teams_elo/pages)
+  * [1_Elo_Progression.py](./NBA_teams_elo/pages/1_Elo_Progression.py)
+  * [2_Elo_vs_Win.py](./NBA_teams_elo/pages/2_Elo_vs_Win.py)
+  * [3_Model_Leaderboard.py](./NBA_teams_elo/pages/3_Model_Leaderboard.py)
+  * [4_Playoff_Predictions.py](./NBA_teams_elo/pages/4_Playoff_Predictions.py)
+  * [5_Series_Simulator.py](./NBA_teams_elo/pages/5_Series_Simulator.py)
+  * [6_Champion_Leaderboard.py](./NBA_teams_elo/pages/6_Champion_Leaderboard.py)
+  * [7_Season_End_Rankings.py](./NBA_teams_elo/pages/7_Season_End_Rankings.py)
+  * [8_Model_Radar.py](./NBA_teams_elo/pages/8_Model_Radar.py)
+* [venv/](./NBA_teams_elo/venv)
+  * [Include/](./NBA_teams_elo/venv/Include)
+  * [Lib/](./NBA_teams_elo/venv/Lib)
+    * [site-packages/](./NBA_teams_elo/venv/Lib/site-packages)
+      * [pip/](./NBA_teams_elo/venv/Lib/site-packages/pip)
+        * [_internal/](./NBA_teams_elo/venv/Lib/site-packages/pip/_internal)
+        * [_vendor/](./NBA_teams_elo/venv/Lib/site-packages/pip/_vendor)
+        * [__pycache__/](./NBA_teams_elo/venv/Lib/site-packages/pip/__pycache__)
+        * [py.typed](./NBA_teams_elo/venv/Lib/site-packages/pip/py.typed)
+        * [__init__.py](./NBA_teams_elo/venv/Lib/site-packages/pip/__init__.py)
+        * [__main__.py](./NBA_teams_elo/venv/Lib/site-packages/pip/__main__.py)
+        * [__pip-runner__.py](./NBA_teams_elo/venv/Lib/site-packages/pip/__pip-runner__.py)
+      * [pip-24.0.dist-info/](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info)
+        * [AUTHORS.txt](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/AUTHORS.txt)
+        * [entry_points.txt](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/entry_points.txt)
+        * [INSTALLER](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/INSTALLER)
+        * [LICENSE.txt](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/LICENSE.txt)
+        * [METADATA](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/METADATA)
+        * [RECORD](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/RECORD)
+        * [REQUESTED](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/REQUESTED)
+        * [top_level.txt](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/top_level.txt)
+        * [WHEEL](./NBA_teams_elo/venv/Lib/site-packages/pip-24.0.dist-info/WHEEL)
+  * [Scripts/](./NBA_teams_elo/venv/Scripts)
+    * [activate](./NBA_teams_elo/venv/Scripts/activate)
+    * [activate.bat](./NBA_teams_elo/venv/Scripts/activate.bat)
+    * [Activate.ps1](./NBA_teams_elo/venv/Scripts/Activate.ps1)
+    * [deactivate.bat](./NBA_teams_elo/venv/Scripts/deactivate.bat)
+    * [pip.exe](./NBA_teams_elo/venv/Scripts/pip.exe)
+    * [pip3.12.exe](./NBA_teams_elo/venv/Scripts/pip3.12.exe)
+    * [pip3.exe](./NBA_teams_elo/venv/Scripts/pip3.exe)
+    * [python.exe](./NBA_teams_elo/venv/Scripts/python.exe)
+    * [pythonw.exe](./NBA_teams_elo/venv/Scripts/pythonw.exe)
+  * [pyvenv.cfg](./NBA_teams_elo/venv/pyvenv.cfg)
+* [.gitignore](./NBA_teams_elo/.gitignore)
+* [calculate_elo.py](./NBA_teams_elo/calculate_elo.py)
+* [combine_scraped_data.ipynb](./NBA_teams_elo/combine_scraped_data.ipynb)
+* [dashboard.py](./NBA_teams_elo/dashboard.py)
+* [evaluate_models.py](./NBA_teams_elo/evaluate_models.py)
+* [plot_figures.py](./NBA_teams_elo/plot_figures.py)
+* [README.md](./NBA_teams_elo/README.md)
+* [requirements.txt](./NBA_teams_elo/requirements.txt)
+* [scrape_data.ipynb](./NBA_teams_elo/scrape_data.ipynb)
 
 ---
 
